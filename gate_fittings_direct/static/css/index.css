@@ -1,1 +1,9 @@
 /** @format */
+
+#top-nav,
+#bottom-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}

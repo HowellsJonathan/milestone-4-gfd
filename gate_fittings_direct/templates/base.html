@@ -42,7 +42,69 @@
 
             <nav class="navbar fixed-top">
                 <div class="container">
-
+                    <div class="row">
+                        <div id="top-nav" class="col-12">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="nav-link">About</a>
+                                </li>
+                            </ul>
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <div><i class="fas fa-user"></i></div>
+                                    {% if request.user.is_authenticated %}
+                                        <a href="#" class="nav-link text-black">My Account</a>
+                                    {% else %}
+                                        <a href="#" class="nav-link text-black">Login/Register</a>
+                                    {% endif %}
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="" class="{% if grand_total %}text-info 
+                                        font-weight-bold{% else %}text-black{% endif %}">
+                                        <div class="text-center">
+                                            <div><i class="fas fa-shopping-basket"></i></div>
+                                            <p class="my-0">
+                                                {% if grand_total %}
+                                                    £{{ grand_total|floatformat:2 }}
+                                                {% else %}
+                                                    £0.00
+                                                {% endif %}
+                                            </p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="bottom-nav" class="col-12">
+                            <a href="#" class="navbar-brand">Gate Fittings Direct</a>
+                            <ul class="list-inline list-unstyled">
+                                <li class="list-inline-item">
+                                    <a href="#" class="nav-link dropdown-toggle" id="productsDropdown"
+                                        role="button" data-toggle="dropdown" aria-haspopup="true" 
+                                        aria-expanded="flase">
+                                        Products
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                                        <a href="#" class="dropdown-item">Hinges</a>
+                                        <a href="#" class="dropdown-item">Latches</a>
+                                        <a href="#" class="dropdown-item">Electric</a>
+                                        <a href="#" class="dropdown-item">Fastenings</a>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item">
+                                    <div class="search">
+                                        <input type="text" class="searchSite" placeholder="Search for a product...">
+                                        <button type="submit" class="searchButton">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </nav>
 
