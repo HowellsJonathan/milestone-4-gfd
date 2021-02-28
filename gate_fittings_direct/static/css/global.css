@@ -8,10 +8,44 @@ html {
     padding: 0;
 }
 
+body {
+    font-family: "Spectral", sans-serif;
+}
+
 .blue-bg {
     background-color: #288fbd;
 }
 
 .grey-bg {
     background-color: #373737;
+}
+
+.text-black {
+    color: #000000;
+}
+
+nav .row {
+    width: 100%;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-row-apart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }

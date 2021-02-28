@@ -1,9 +1,13 @@
 /** @format */
 
-#top-nav,
-#bottom-nav {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
+#top-nav {
+    font-size: 0.8rem;
+}
+
+#products-arrow-down {
+    font-size: 0.7rem;
+}
+
+.dropdown-menu {
+    left: 230px;
 }
