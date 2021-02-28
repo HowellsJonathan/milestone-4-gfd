@@ -1,0 +1,87 @@
+<div class="container">
+    <div class="row">
+        <div id="top-nav" class="col-12 flex-row-apart">
+            <ul class="list-unstyled list-inline my-0">
+                <li class="list-inline-item">
+                    <a href="#" class="nav-link pl-0 text-black">Contact</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="nav-link text-black">About</a>
+                </li>
+            </ul>
+            <ul class="list-unstyled list-inline flex my-0">
+                <li class="list-inline-item flex">
+                    {% if request.user.is_authenticated %}
+                        <a href="#" class="nav-link text-black flex">
+                            <div><i class="fas fa-user pr-2"></i></div>
+                            <p class="my-0">My Account</p>
+                        </a>
+                    {% else %}
+                        <a href="#" class="nav-link text-black flex">
+                            <div><i class="fas fa-user pr-2"></i></div>
+                            <p class="my-0">Login/Register</p>
+                        </a>
+                    {% endif %}
+                </li>
+                <li class="list-inline-item align-center flex">
+                    <a href="#" class="{% if grand_total %}text-info 
+                        font-weight-bold{% else %}text-black{% endif %}
+                        nav-link pr-0">
+                        <div class="flex">
+                            <div><i class="fas fa-shopping-basket pr-2"></i></div>
+                            <p class="my-0">
+                                {% if grand_total %}
+                                    £{{ grand_total|floatformat:2 }}
+                                {% else %}
+                                    £0.00
+                                {% endif %}
+                            </p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="bottom-nav" class="col-12 flex-row-apart">
+            <ul class="list-inline list-unstyled flex align-center my-0">
+                <li class="list-inline-item">
+                    <a href="#" class="navbar-brand text-black py-0">Gate Fittings Direct</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="#" class="nav-link text-black py-0" id="productsDropdown"
+                        role="button" data-toggle="dropdown" aria-haspopup="true" 
+                        aria-expanded="flase">
+                        Products
+                        <i class="fas fa-chevron-down nav-arrow-size"></i>
+                    </a>
+                    <div class="dropdown-menu text-black dropright" aria-labelledby="productsDropdown">
+                        <a href="#" class="dropdown-item" id="hingesDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Hinges
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="hingesDropdown">
+                            <div class="flex align-baseline pb-2">
+                                <h4 class="dropdown-cat-header my-0 px-4 ">Hinges</h4>
+                                <a href="#" class="view-all-link text-black">
+                                    View all Hinges 
+                                    <i class="fas fa-chevron-right nav-arrow-size"></i>
+                                </a>    
+                            </div>
+                            <a href="#" class="dropdown-right-links dropdown-item">Adjustable Hook & Band Hinges</a>
+                            <a href="#" class="dropdown-right-links dropdown-item">Heavy Reversible Ornamental Hinges</a>
+                            <a href="#" class="dropdown-right-links dropdown-item">Field Gate Hinges</a>
+                            <a href="#" class="dropdown-right-links dropdown-item">Cranked Hook & Band Hinges</a>
+                        </div>
+                        <a href="#" class="dropdown-item">Latches</a>
+                        <a href="#" class="dropdown-item">Electric</a>
+                        <a href="#" class="dropdown-item">Fastenings</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="search">
+                <a href="#">
+                    <i class="fa fa-search text-black"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
