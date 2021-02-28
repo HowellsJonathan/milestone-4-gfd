@@ -32,6 +32,10 @@ nav .row {
     align-items: center;
 }
 
+.align-baseline {
+    align-items: baseline;
+}
+
 .flex {
     display: flex;
 }
@@ -48,4 +52,15 @@ nav .row {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+/* Navbar */
+
+.dropdown-item:focus {
+    color: #000000;
+    background-color: #288fbd;
+}
+
+.dropdown-item:hover {
+    background-color: #e6e6e6;
 }

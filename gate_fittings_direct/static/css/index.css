@@ -4,10 +4,10 @@
     font-size: 0.8rem;
 }
 
-#products-arrow-down {
-    font-size: 0.7rem;
+.nav-arrow-size {
+    font-size: 0.6rem;
 }
 
-.dropdown-menu {
-    left: 230px;
+.view-all-link {
+    font-size: 0.8rem;
 }
