@@ -1,0 +1,17 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&family=Spectral:wght@300;400;500;600;700&display=swap");
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.blue-bg {
+    background-color: #288fbd;
+}
+
+.grey-bg {
+    background-color: #373737;
+}
