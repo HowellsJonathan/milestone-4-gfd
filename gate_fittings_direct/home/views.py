@@ -1,5 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse("Hello, Django!")
+def index(request):
+    """ A View to return Index page """
+    
+    return render(request, 'home/index.html')
