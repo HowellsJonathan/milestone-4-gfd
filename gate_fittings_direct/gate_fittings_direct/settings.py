@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'django_user_agents',
     'home',
+    'products',
 ]
 
 MIDDLEWARE = [
