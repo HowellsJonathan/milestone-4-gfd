@@ -1,0 +1,49 @@
+[
+    {
+        "pk": 1,
+        "model": "products.main_catgeory",
+        "fields": { "name": "hinges", "friendly_name": "Hinges" }
+    },
+    {
+        "pk": 2,
+        "model": "products.main_category",
+        "fields": { "name": "latches", "friendly_name": "Latches" }
+    },
+    {
+        "pk": 3,
+        "model": "products.main_catgeory",
+        "fields": {
+            "name": "fastenings_and_fixings",
+            "friendly_name": "Fastenings & Fixings"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.main_catgeory",
+        "fields": {
+            "name": "security_and_locks",
+            "friendly_name": "Security & Locks"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.main_catgeory",
+        "fields": {
+            "name": "ornamental_gate_fittings",
+            "friendly_name": "Ornamental Gate Fittings"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.main_catgeory",
+        "fields": {
+            "name": "electric_fencing",
+            "friendly_name": "Electric Fencing"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.main_catgeory",
+        "fields": { "name": "gate_wheels", "friendly_name": "Gate Wheels" }
+    }
+]
