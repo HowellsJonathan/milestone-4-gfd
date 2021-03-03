@@ -1,7 +1,7 @@
 [
     {
         "pk": 1,
-        "model": "products.catgeory",
+        "model": "products.main_category",
         "fields": {
             "name": "hinges",
             "friendly_name": "Hinges"
@@ -9,7 +9,7 @@
     },
     {
         "pk": 2,
-        "model": "products.category",
+        "model": "products.main_category",
         "fields": {
             "name": "latches",
             "friendly_name": "Latches"
@@ -17,7 +17,7 @@
     },
     {
         "pk": 3,
-        "model": "products.catgeory",
+        "model": "products.main_category",
         "fields": {
             "name": "fastenings_and_fixings",
             "friendly_name": "Fastenings & Fixings"
@@ -25,7 +25,7 @@
     },
     {
         "pk": 4,
-        "model": "products.catgeory",
+        "model": "products.main_category",
         "fields": {
             "name": "security_and_locks",
             "friendly_name": "Security & Locks"
@@ -33,7 +33,7 @@
     },
     {
         "pk": 5,
-        "model": "products.catgeory",
+        "model": "products.main_category",
         "fields": {
             "name": "gate_wheels",
             "friendly_name": "Gate Wheels"
