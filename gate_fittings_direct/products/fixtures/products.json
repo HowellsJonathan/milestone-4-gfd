@@ -741,7 +741,7 @@
             "brand": "Unbranded",
             "price": 55.95,
             "trade_price": 44.75,
-            "main_category": 6,
+            "main_category": 5,
             "sub_category": null,
             "rating": null,
             "image": "GATWHE1.png"
@@ -758,7 +758,7 @@
             "brand": "Unbranded",
             "price": 52.95,
             "trade_price": 42.35,
-            "main_category": 6,
+            "main_category": 5,
             "sub_category": null,
             "rating": null,
             "image": "GATWHE2.jpg"
@@ -775,7 +775,7 @@
             "brand": "Unbranded",
             "price": 25.95,
             "trade_price": 20.75,
-            "main_category": 6,
+            "main_category": 5,
             "sub_category": null,
             "rating": null,
             "image": "GATWHE3.jpg"
