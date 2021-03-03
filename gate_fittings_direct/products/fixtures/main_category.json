@@ -32,7 +32,7 @@
         }
     },
     {
-        "pk": 6,
+        "pk": 5,
         "model": "products.catgeory",
         "fields": {
             "name": "gate_wheels",
