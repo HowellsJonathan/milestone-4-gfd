@@ -9,9 +9,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 27.95,
-            "trade-price": 22.35,
-            "main-category": 2,
-            "sub-category": 1,
+            "trade_price": 22.35,
+            "main_category": 2,
+            "sub_category": 1,
             "rating": null,
             "image": "LATMOR1.jpg"
         }
@@ -26,9 +26,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 48.95,
-            "trade-price": 39.2,
-            "main-category": 2,
-            "sub-category": 1,
+            "trade_price": 39.2,
+            "main_category": 2,
+            "sub_category": 1,
             "rating": null,
             "image": "LATMOR2.jpg"
         }
@@ -43,9 +43,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 26.95,
-            "trade-price": 21.56,
-            "main-category": 2,
-            "sub-category": 2,
+            "trade_price": 21.56,
+            "main_category": 2,
+            "sub_category": 2,
             "rating": null,
             "image": "LATEQU1.jpg"
         }
@@ -60,9 +60,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 34.95,
-            "trade-price": 27.95,
-            "main-category": 2,
-            "sub-category": 2,
+            "trade_price": 27.95,
+            "main_category": 2,
+            "sub_category": 2,
             "rating": null,
             "image": "LATEQU2.jpg"
         }
@@ -77,9 +77,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 19.95,
-            "trade-price": 15.95,
-            "main-category": 2,
-            "sub-category": 2,
+            "trade_price": 15.95,
+            "main_category": 2,
+            "sub_category": 2,
             "rating": null,
             "image": "LATEQU3.jpg"
         }
@@ -94,9 +94,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 55.95,
-            "trade-price": 44.75,
-            "main-category": 2,
-            "sub-category": 3,
+            "trade_price": 44.75,
+            "main_category": 2,
+            "sub_category": 3,
             "rating": null,
             "image": "LATUNI1.jpg"
         }
@@ -111,9 +111,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 84.95,
-            "trade-price": 67.95,
-            "main-category": 2,
-            "sub-category": 3,
+            "trade_price": 67.95,
+            "main_category": 2,
+            "sub_category": 3,
             "rating": null,
             "image": "LATUNI2.jpg"
         }
@@ -128,9 +128,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 110.95,
-            "trade-price": 88.75,
-            "main-category": 2,
-            "sub-category": 3,
+            "trade_price": 88.75,
+            "main_category": 2,
+            "sub_category": 3,
             "rating": null,
             "image": "LATUNI3.jpg"
         }
@@ -145,9 +145,9 @@
             "material": "Steel Bright Zinc Plated (BZP)",
             "brand": "Unbranded",
             "price": 19.95,
-            "trade-price": 15.95,
-            "main-category": 2,
-            "sub-category": 4,
+            "trade_price": 15.95,
+            "main_category": 2,
+            "sub_category": 4,
             "rating": null,
             "image": "LATRIN1.jpg"
         }
@@ -162,9 +162,9 @@
             "material": "Steel Black Epoxy",
             "brand": "Unbranded",
             "price": 52.95,
-            "trade-price": 42.35,
-            "main-category": 2,
-            "sub-category": 4,
+            "trade_price": 42.35,
+            "main_category": 2,
+            "sub_category": 4,
             "rating": null,
             "image": "LATRIN2.jpg"
         }
@@ -179,9 +179,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 49.95,
-            "trade-price": 39.95,
-            "main-category": 2,
-            "sub-category": 4,
+            "trade_price": 39.95,
+            "main_category": 2,
+            "sub_category": 4,
             "rating": null,
             "image": "LATRIN3.png"
         }
@@ -196,9 +196,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 41.95,
-            "trade-price": 33.55,
-            "main-category": 1,
-            "sub-category": 5,
+            "trade_price": 33.55,
+            "main_category": 1,
+            "sub_category": 5,
             "rating": null,
             "image": "HINREV1.jpg"
         }
@@ -213,9 +213,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 33.95,
-            "trade-price": 27.15,
-            "main-category": 1,
-            "sub-category": 5,
+            "trade_price": 27.15,
+            "main_category": 1,
+            "sub_category": 5,
             "rating": null,
             "image": "HINREV2.jpg"
         }
@@ -230,9 +230,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 45.95,
-            "trade-price": 36.75,
-            "main-category": 1,
-            "sub-category": 5,
+            "trade_price": 36.75,
+            "main_category": 1,
+            "sub_category": 5,
             "rating": null,
             "image": "HINREV3.jpg"
         }
@@ -243,13 +243,13 @@
         "fields": {
             "sku": "HINADJ1",
             "name": "Pair of 18 inch Heavy Duty adjustable hinges",
-            "description": "This pair of 18 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re-level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
+            "description": "This pair of 18 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re_level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 36.95,
-            "trade-price": 29.56,
-            "main-category": 1,
-            "sub-category": 6,
+            "trade_price": 29.56,
+            "main_category": 1,
+            "sub_category": 6,
             "rating": null,
             "image": "HINADJ1.jpg"
         }
@@ -260,13 +260,13 @@
         "fields": {
             "sku": "HINADJ2",
             "name": "Pair of 24 inch Heavy Duty adjustable hinges",
-            "description": "This pair of 24 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re-level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
+            "description": "This pair of 24 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re_level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 42.95,
-            "trade-price": 34.35,
-            "main-category": 1,
-            "sub-category": 6,
+            "trade_price": 34.35,
+            "main_category": 1,
+            "sub_category": 6,
             "rating": null,
             "image": "HINADJ1.jpg"
         }
@@ -277,13 +277,13 @@
         "fields": {
             "sku": "HINADJ3",
             "name": "Pair of 36 inch Heavy Duty adjustable hinges",
-            "description": "This pair of 36 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re-level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
+            "description": "This pair of 36 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re_level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 132.95,
-            "trade-price": 106.35,
-            "main-category": 1,
-            "sub-category": 6,
+            "trade_price": 106.35,
+            "main_category": 1,
+            "sub_category": 6,
             "rating": null,
             "image": "HINADJ1.jpg"
         }
@@ -298,9 +298,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 23.95,
-            "trade-price": 19.15,
-            "main-category": 1,
-            "sub-category": 7,
+            "trade_price": 19.15,
+            "main_category": 1,
+            "sub_category": 7,
             "rating": null,
             "image": "HINFIE1.jpg"
         }
@@ -315,9 +315,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 18.95,
-            "trade-price": 15.15,
-            "main-category": 1,
-            "sub-category": 7,
+            "trade_price": 15.15,
+            "main_category": 1,
+            "sub_category": 7,
             "rating": null,
             "image": "HINFIE2.jpg"
         }
@@ -332,9 +332,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 59.95,
-            "trade-price": 47.95,
-            "main-category": 1,
-            "sub-category": 7,
+            "trade_price": 47.95,
+            "main_category": 1,
+            "sub_category": 7,
             "rating": null,
             "image": "HINFIE3.jpg"
         }
@@ -349,9 +349,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 17.95,
-            "trade-price": 14.35,
-            "main-category": 1,
-            "sub-category": 7,
+            "trade_price": 14.35,
+            "main_category": 1,
+            "sub_category": 7,
             "rating": null,
             "image": "HINFIE4.jpg"
         }
@@ -366,9 +366,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 10.95,
-            "trade-price": 8.75,
-            "main-category": 3,
-            "sub-category": 8,
+            "trade_price": 8.75,
+            "main_category": 3,
+            "sub_category": 8,
             "rating": null,
             "image": "FASSTR1.jpg"
         }
@@ -383,9 +383,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 10.95,
-            "trade-price": 8.75,
-            "main-category": 3,
-            "sub-category": 8,
+            "trade_price": 8.75,
+            "main_category": 3,
+            "sub_category": 8,
             "rating": null,
             "image": "FASSTR2.jpg"
         }
@@ -400,9 +400,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 10.95,
-            "trade-price": 8.75,
-            "main-category": 3,
-            "sub-category": 8,
+            "trade_price": 8.75,
+            "main_category": 3,
+            "sub_category": 8,
             "rating": null,
             "image": "FASSTR3.jpg"
         }
@@ -417,9 +417,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 15.95,
-            "trade-price": 12.75,
-            "main-category": 3,
-            "sub-category": 9,
+            "trade_price": 12.75,
+            "main_category": 3,
+            "sub_category": 9,
             "rating": null,
             "image": "FASFIX1.jpg"
         }
@@ -434,9 +434,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 17.95,
-            "trade-price": 14.35,
-            "main-category": 3,
-            "sub-category": 9,
+            "trade_price": 14.35,
+            "main_category": 3,
+            "sub_category": 9,
             "rating": null,
             "image": "FASFIX2.jpg"
         }
@@ -451,9 +451,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 13.95,
-            "trade-price": 11.15,
-            "main-category": 3,
-            "sub-category": 9,
+            "trade_price": 11.15,
+            "main_category": 3,
+            "sub_category": 9,
             "rating": null,
             "image": "FASFIX3.jpg"
         }
@@ -468,9 +468,9 @@
             "material": "BZP",
             "brand": "Sitemate",
             "price": 22.95,
-            "trade-price": 18.35,
-            "main-category": 3,
-            "sub-category": 10,
+            "trade_price": 18.35,
+            "main_category": 3,
+            "sub_category": 10,
             "rating": null,
             "image": "FASFEN1.jpg"
         }
@@ -481,13 +481,13 @@
         "fields": {
             "sku": "FASFEN2",
             "name": "20 - 100mm timber lock screws",
-            "description": "High quality incredibly strong hex head timber lock screws supplied with bit holder. Used for fencing sleepers and other uses on farm constructions. A large diameter flange means you can easily remove the driver bit after use. Self-countersinking head. Cutter tip size 6.5mm making it easier to drive the screw in. Corrosion resistant ruspert green finish – 1,000 hours salt spray tested. Ideal for use across a variety of specialist jobs, including decking, landscaping sleepers, rafters and fencing. The hardened screw has been designed to cut in to wood easily. Added strength allows the screws to be used with impact drivers. Maximum grip is achieved through dynamic thread profiles that hold the fixing in place. Heat treated carbon steel",
+            "description": "High quality incredibly strong hex head timber lock screws supplied with bit holder. Used for fencing sleepers and other uses on farm constructions. A large diameter flange means you can easily remove the driver bit after use. Self_countersinking head. Cutter tip size 6.5mm making it easier to drive the screw in. Corrosion resistant ruspert green finish – 1,000 hours salt spray tested. Ideal for use across a variety of specialist jobs, including decking, landscaping sleepers, rafters and fencing. The hardened screw has been designed to cut in to wood easily. Added strength allows the screws to be used with impact drivers. Maximum grip is achieved through dynamic thread profiles that hold the fixing in place. Heat treated carbon steel",
             "material": "Steel (Galvanised)",
             "brand": "Sitemate",
             "price": 12.95,
-            "trade-price": 10.35,
-            "main-category": 3,
-            "sub-category": 10,
+            "trade_price": 10.35,
+            "main_category": 3,
+            "sub_category": 10,
             "rating": null,
             "image": "FASFEN2.jpg"
         }
@@ -502,9 +502,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 19.95,
-            "trade-price": 15.95,
-            "main-category": 3,
-            "sub-category": 10,
+            "trade_price": 15.95,
+            "main_category": 3,
+            "sub_category": 10,
             "rating": null,
             "image": "FASFEN3.jpg"
         }
@@ -519,9 +519,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 11.95,
-            "trade-price": 9.55,
-            "main-category": 3,
-            "sub-category": 10,
+            "trade_price": 9.55,
+            "main_category": 3,
+            "sub_category": 10,
             "rating": null,
             "image": "FASFEN4.jpg"
         }
@@ -536,9 +536,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 29.95,
-            "trade-price": 23.95,
-            "main-category": 4,
-            "sub-category": 11,
+            "trade_price": 23.95,
+            "main_category": 4,
+            "sub_category": 11,
             "rating": null,
             "image": "SECDRO1.jpg"
         }
@@ -553,9 +553,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 45.95,
-            "trade-price": 36.75,
-            "main-category": 4,
-            "sub-category": 11,
+            "trade_price": 36.75,
+            "main_category": 4,
+            "sub_category": 11,
             "rating": null,
             "image": "SECDRO2.jpg"
         }
@@ -570,9 +570,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 15.95,
-            "trade-price": 12.75,
-            "main-category": 4,
-            "sub-category": 11,
+            "trade_price": 12.75,
+            "main_category": 4,
+            "sub_category": 11,
             "rating": null,
             "image": "SECDRO3.jpg"
         }
@@ -587,9 +587,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Zedlock",
             "price": 39.95,
-            "trade-price": 31.95,
-            "main-category": 4,
-            "sub-category": 12,
+            "trade_price": 31.95,
+            "main_category": 4,
+            "sub_category": 12,
             "rating": null,
             "image": "SECZED1.jpg"
         }
@@ -600,13 +600,13 @@
         "fields": {
             "sku": "SECZED2",
             "name": "Zedlock metal gate locking system",
-            "description": "The Gatemate® Zedlock® is a unique, premium quality, patented long throw lock. Ideal for securing any large gate and a great replacement for a padlock and chain. Easy to install. Comes with drill bit for the large holes - you will need a 13mm drill bit. Screws/bolts and Allen keys to install. Extremely strong and secure lock for metal field gates. 2 keys. Suitable for gates with 50mm metal gate stiles. We advise that there is no greater gap than 40mm from the gate to the post to work properly..70mm bolt throw. 3 lever lock mechanism",
+            "description": "The Gatemate® Zedlock® is a unique, premium quality, patented long throw lock. Ideal for securing any large gate and a great replacement for a padlock and chain. Easy to install. Comes with drill bit for the large holes _ you will need a 13mm drill bit. Screws/bolts and Allen keys to install. Extremely strong and secure lock for metal field gates. 2 keys. Suitable for gates with 50mm metal gate stiles. We advise that there is no greater gap than 40mm from the gate to the post to work properly..70mm bolt throw. 3 lever lock mechanism",
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 39.95,
-            "trade-price": 31.95,
-            "main-category": 4,
-            "sub-category": 12,
+            "trade_price": 31.95,
+            "main_category": 4,
+            "sub_category": 12,
             "rating": null,
             "image": "SECZED2.jpg"
         }
@@ -621,9 +621,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 57.95,
-            "trade-price": 46.35,
-            "main-category": 4,
-            "sub-category": 12,
+            "trade_price": 46.35,
+            "main_category": 4,
+            "sub_category": 12,
             "rating": null,
             "image": "SECZED3.jpg"
         }
@@ -638,9 +638,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 8.95,
-            "trade-price": 7.15,
-            "main-category": 4,
-            "sub-category": 13,
+            "trade_price": 7.15,
+            "main_category": 4,
+            "sub_category": 13,
             "rating": null,
             "image": "SECBRE1.jpg"
         }
@@ -655,9 +655,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 19.95,
-            "trade-price": 15.95,
-            "main-category": 4,
-            "sub-category": 13,
+            "trade_price": 15.95,
+            "main_category": 4,
+            "sub_category": 13,
             "rating": null,
             "image": "SECBRE2.jpg"
         }
@@ -672,9 +672,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 26.95,
-            "trade-price": 21.55,
-            "main-category": 4,
-            "sub-category": 13,
+            "trade_price": 21.55,
+            "main_category": 4,
+            "sub_category": 13,
             "rating": null,
             "image": "SECBRE3.jpg"
         }
@@ -689,9 +689,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 10.95,
-            "trade-price": 8.75,
-            "main-category": 4,
-            "sub-category": 14,
+            "trade_price": 8.75,
+            "main_category": 4,
+            "sub_category": 14,
             "rating": null,
             "image": "SECANI1.jpg"
         }
@@ -706,9 +706,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 20.95,
-            "trade-price": 16.75,
-            "main-category": 4,
-            "sub-category": 14,
+            "trade_price": 16.75,
+            "main_category": 4,
+            "sub_category": 14,
             "rating": null,
             "image": "SECANI2.jpg"
         }
@@ -723,9 +723,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 25.95,
-            "trade-price": 20.75,
-            "main-category": 4,
-            "sub-category": 14,
+            "trade_price": 20.75,
+            "main_category": 4,
+            "sub_category": 14,
             "rating": null,
             "image": "SECANI3.jpg"
         }
@@ -740,9 +740,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 55.95,
-            "trade-price": 44.75,
-            "main-category": 6,
-            "sub-category": null,
+            "trade_price": 44.75,
+            "main_category": 6,
+            "sub_category": null,
             "rating": null,
             "image": "GATWHE1.png"
         }
@@ -757,9 +757,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 52.95,
-            "trade-price": 42.35,
-            "main-category": 6,
-            "sub-category": null,
+            "trade_price": 42.35,
+            "main_category": 6,
+            "sub_category": null,
             "rating": null,
             "image": "GATWHE2.jpg"
         }
@@ -774,9 +774,9 @@
             "material": "Steel (Galvanised)",
             "brand": "Unbranded",
             "price": 25.95,
-            "trade-price": 20.75,
-            "main-category": 6,
-            "sub-category": null,
+            "trade_price": 20.75,
+            "main_category": 6,
+            "sub_category": null,
             "rating": null,
             "image": "GATWHE3.jpg"
         }
