@@ -1,6 +1,26 @@
 /** @format */
 
 .card-border {
-    border: solid 1px #cacaca;
     border-radius: 0.2rem;
+    box-shadow: 1px 4px 6px -2px rgb(0, 0, 0, 0.2);
+}
+
+.product-img-container {
+    width: 100%;
+    height: 215px;
+    display: flex;
+    background: #fff;
+}
+
+.centered-img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.card-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
