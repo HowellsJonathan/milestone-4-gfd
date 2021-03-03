@@ -1,0 +1,784 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATMOR1",
+            "name": "Central Closing Mortice Gate Catch",
+            "description": "A central closing mortice gate catch is perfect if you need to close a gate centrally to a post. The latch glides into the reciever both ways with ease. Comes with fixing screws & bolts. Most commonly used for a field gate catch or latch, especially in an area that equines and equestrians are present. Can also be used for a wooden gate catch latch to secure smaller wooden gates where needed.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 27.95,
+            "trade-price": 22.35,
+            "main-category": 2,
+            "sub-category": 1,
+            "rating": null,
+            "image": "LATMOR1.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATMOR2",
+            "name": "Two Central Closing Mortice Catches",
+            "description": "A pair of central closing mortice catches or latches. These are perfect if you need to close a gate centrally to a post. The latch glides into the reciever both ways with ease. Comes with fixing screws & bolts. Most commonly used for a field gate catch or latch, especially in an area that equines and equestrians are present. Can also be used for a wooden gate catch latch to secure smaller wooden gates where needed. Save money by taking two catches rather than one.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 48.95,
+            "trade-price": 39.2,
+            "main-category": 2,
+            "sub-category": 1,
+            "rating": null,
+            "image": "LATMOR2.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATEQU1",
+            "name": "Equestrian Gate Latch",
+            "description": "A fully galvanised equestrian gate latch is used extensively wherever horses are present for bridleway gate fittings. The latch is very reliable, easy to use and install. Simply raise the ringed bar to open the gate and as the latch itself is self locking, simply pull or push the gate shut. Comes with all fixings. Please note this latch does not come with the double leg gate striker that fits to the gate, these have to be bought seperately. Alternatively we also sell them both as a full kit on our website.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 26.95,
+            "trade-price": 21.56,
+            "main-category": 2,
+            "sub-category": 2,
+            "rating": null,
+            "image": "LATEQU1.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATEQU2",
+            "name": "Lift Type Hunting Equine Gate Catch With Striker",
+            "description": "This fully galvinised hunting equine gate catch or latch is perfect for being installed into wooden gates or wooden field gates. We use these on most of our field gate installations where horses are being led through gates, as they can be operated whilst riding. This equine gate latch comes with an animal safe double leg D striker and all fixings.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 34.95,
+            "trade-price": 27.95,
+            "main-category": 2,
+            "sub-category": 2,
+            "rating": null,
+            "image": "LATEQU2.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATEQU3",
+            "name": "Field Gate Latching Kit",
+            "description": "This fully galvanised self locking gate catch or latch is everything you need to latch a wooden farm gate or your field gate. It comes with all fixings needed along with the self locking catch. Including coach screws and a cranked striker. Can also be used in equestrian areas around your land.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 19.95,
+            "trade-price": 15.95,
+            "main-category": 2,
+            "sub-category": 2,
+            "rating": null,
+            "image": "LATEQU3.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATUNI1",
+            "name": "Uni Latch Two way central locking latch for uni latch kits",
+            "description": "The uni latch is the rolls royce of gate closures. It is ideal for footpath and bridleway latches. The Uni Latch closing latch is advertised to be used in conjunction with a uni latch kit for the fixings and other accessories. Minimum post size 7 inch x 7 inch and the gate must be centrally mounted. Opens and closes in both directions. The Uni Latch is a heavy duty latch and very secure. Comes with all fixings.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 55.95,
+            "trade-price": 44.75,
+            "main-category": 2,
+            "sub-category": 3,
+            "rating": null,
+            "image": "LATUNI1.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATUNI2",
+            "name": "Straight Handle Uni Latch for metal gates",
+            "description": "The Uni Latch system is the rolls royce of metal gate openers. It boasts effortless opening and an easy install. This verson can only be used in conjunction with metal gates (we also sell the wooden gate version). This model has a striaght handle. We use this for bridleway footpath latches and for metal equine latches.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 84.95,
+            "trade-price": 67.95,
+            "main-category": 2,
+            "sub-category": 3,
+            "rating": null,
+            "image": "LATUNI2.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATUNI3",
+            "name": "Bow Handle Uni Latch for wooden gates",
+            "description": "The bow handle Uni Latch for wooden gates is heralded as the rolls royce of gate openers for bridleway footpaths and equine farm areas or equine gates. It requires effortless opening and an easy install. This model is for wooden gates only (we do also sell the metal gate versions), it also has a bow handle (straight handle also available).",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 110.95,
+            "trade-price": 88.75,
+            "main-category": 2,
+            "sub-category": 3,
+            "rating": null,
+            "image": "LATUNI3.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATRIN1",
+            "name": "BZP 6 inch Ring latch & 6 inch Brenton padlockable bolt",
+            "description": "This 6 inch Ring latch and brenton padlockable bolt are bright zinc plated (BZP) which are excellent for wooden gates or doors. We use them for fencing stables and farming enclosure doors. Can also be used for close boarded cottage and picket gates. Comes with all fixings needed for an easy install.",
+            "material": "Steel Bright Zinc Plated (BZP)",
+            "brand": "Unbranded",
+            "price": 19.95,
+            "trade-price": 15.95,
+            "main-category": 2,
+            "sub-category": 4,
+            "rating": null,
+            "image": "LATRIN1.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATRIN2",
+            "name": "10 inch Heavy Duty epoxy black ornamental ring latch",
+            "description": "This stunning black ring latch is ideal for a large pair of gates. This is our most heavy duty ring latch available. A very ornate latch suitable for larger and elegant drive ways. Due to it's 10 inch size it is much larger than a standard 6 inch ring latch allowing for easier opening and more durable lifespan. We also supply these in a galvanised finish. Comes with all fixings for install.",
+            "material": "Steel Black Epoxy",
+            "brand": "Unbranded",
+            "price": 52.95,
+            "trade-price": 42.35,
+            "main-category": 2,
+            "sub-category": 4,
+            "rating": null,
+            "image": "LATRIN2.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "sku": "LATRIN3",
+            "name": "8 inch heavy duty galvanised ornamental ring latch",
+            "description": "This stunning 8 inch galvanised ring latch is ideal for a large pair of gates, we have also used these in driveways. The larger 8 inch size allows for easier opening and install along with giving it an even better look. Comes with all fixings for install.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 49.95,
+            "trade-price": 39.95,
+            "main-category": 2,
+            "sub-category": 4,
+            "rating": null,
+            "image": "LATRIN3.png"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINREV1",
+            "name": "Two pairs of 18 inch heavy reversible gate hinges",
+            "description": "This is a pack of two paris of 18 inch heavy reverisble ornamental gate hinges. These are incredibly strong hinges that are also very duarable to the galvanised finish. These are ideal for farm and fence gates, used on wooden gates which can also be used for large driveway gates and stable gates. Supplied with bolts and screws for install. Bands locate to posts via cups top and bottom.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 41.95,
+            "trade-price": 33.55,
+            "main-category": 1,
+            "sub-category": 5,
+            "rating": null,
+            "image": "HINREV1.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINREV2",
+            "name": "Pair of 24 inch heavy reversible gate hinges",
+            "description": "This is a pair of 24 inch heavy reversible galvanised gate hinges. These are also in a good looking ornamental style which is great when applied to medium driveway gates or stable gates. Supplied with bolts and screws for install. Suitable to hand a 4 foot wide gate or door. Bands locate to posts via cups top and bottom. If you have a larger gate I reccomend getting a second pair or a larger pair of gate hinges from our store.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 33.95,
+            "trade-price": 27.15,
+            "main-category": 1,
+            "sub-category": 5,
+            "rating": null,
+            "image": "HINREV2.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINREV3",
+            "name": "Pair of 36 inch heavy reversible black gate hinges",
+            "description": "This ornamental 36 inch heavy reversible black gate hinges are suitable for gates in driveways, farms and stables for up to 6 foot in width. They are applied with a black epoxy finish on steel for a stunning look. These are supplied with bolts and screws for install. Bands locate to posts via cups top and bottom.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 45.95,
+            "trade-price": 36.75,
+            "main-category": 1,
+            "sub-category": 5,
+            "rating": null,
+            "image": "HINREV3.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINADJ1",
+            "name": "Pair of 18 inch Heavy Duty adjustable hinges",
+            "description": "This pair of 18 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re-level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 36.95,
+            "trade-price": 29.56,
+            "main-category": 1,
+            "sub-category": 6,
+            "rating": null,
+            "image": "HINADJ1.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINADJ2",
+            "name": "Pair of 24 inch Heavy Duty adjustable hinges",
+            "description": "This pair of 24 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re-level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 42.95,
+            "trade-price": 34.35,
+            "main-category": 1,
+            "sub-category": 6,
+            "rating": null,
+            "image": "HINADJ1.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINADJ3",
+            "name": "Pair of 36 inch Heavy Duty adjustable hinges",
+            "description": "This pair of 36 inch galvanised heavy duty adjustable hook and band hinges are by far the easiest way to hand large wooden gates. Especially pairs of gates. The hinge allows you to both re-level gates if they drop and reduce or increase the gap between the gates or gap between the posts and gate heel. Supplied with bolts and screws for install.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 132.95,
+            "trade-price": 106.35,
+            "main-category": 1,
+            "sub-category": 6,
+            "rating": null,
+            "image": "HINADJ1.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINFIE1",
+            "name": "24 inch Double strap top hinge for field and entrance gates",
+            "description": "This 24 inch double strap top hinge for field gates and other entrance gates. Comes with bolts to install. Please note this is for a top hand only not the hanging plate shown in the main photo. These band gate fittings are perfect for fencing, wooden gates and other livestock gates.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 23.95,
+            "trade-price": 19.15,
+            "main-category": 1,
+            "sub-category": 7,
+            "rating": null,
+            "image": "HINFIE1.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINFIE2",
+            "name": "One Adjustable Heavy Duty Hook on plate",
+            "description": "This hook on plate is to be used in conjunction with hinges for gates. The pin can be adjusted out and into the plate to allow for gate and door alignment at their ends. Or to allow the gate to rise or fall when opening. Comes with four 75mm easy start coach screws to install. 19mm pin size. Fully galvanised. 4 inch x 4 inch plate size.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 18.95,
+            "trade-price": 15.15,
+            "main-category": 1,
+            "sub-category": 7,
+            "rating": null,
+            "image": "HINFIE2.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINFIE3",
+            "name": "Complete set of gate furniture to hand a pair or 3 foot to 12 foot wide field gates",
+            "description": "This set comes with two sets of galvanised adjustable 24 inch top band hanging sets. It also comes with one 18 inch galvanised drop bolt, one 14 inch galvanised throw over loop and all screws and bolts to install. Buying two pairs gives big savings over purchasing individually. These are perfect for field gates from 3 foot to 12 foot in width. Can also be used for garden and other fencing gates.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 59.95,
+            "trade-price": 47.95,
+            "main-category": 1,
+            "sub-category": 7,
+            "rating": null,
+            "image": "HINFIE3.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "sku": "HINFIE4",
+            "name": "One 19mm adjustable wooden gate bottom eye",
+            "description": "This 19mm adjustable wooden gate bottom eye can be used to convert a non adjustable field gate hinge to an adjustable one enabling easy adjustment of dropped gates. This does not include the hanging hook on plate, those are sold seperately. These are perfect for heavy traffic areas such as field gates for tractors and over farm gates.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 17.95,
+            "trade-price": 14.35,
+            "main-category": 1,
+            "sub-category": 7,
+            "rating": null,
+            "image": "HINFIE4.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASSTR1",
+            "name": "12mm diameter double leg d gate striker",
+            "description": "This double leg gate stiker is to be used in conjunction with a self closing field gate catch. These are safer for horses and livestock than single leg strikers. They are also easy to fit and we also sell the self locking gate gate latches.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 10.95,
+            "trade-price": 8.75,
+            "main-category": 3,
+            "sub-category": 8,
+            "rating": null,
+            "image": "FASSTR1.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASSTR2",
+            "name": "12mm Diameter cranked wooden gate striker",
+            "description": "These are to be used in conjunction with a self closing field gate catch. Suitable for wooden gates, fencing, farm gates and other equestrian catches.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 10.95,
+            "trade-price": 8.75,
+            "main-category": 3,
+            "sub-category": 8,
+            "rating": null,
+            "image": "FASSTR2.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASSTR3",
+            "name": "Galvanised odd legg gate striker",
+            "description": "Can be used in conjunction with self locking gate catches, many used on 5 bar field gates. These are similar to the double leg strikers we sell, very safe for livestock.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 10.95,
+            "trade-price": 8.75,
+            "main-category": 3,
+            "sub-category": 8,
+            "rating": null,
+            "image": "FASSTR3.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASFIX1",
+            "name": "Galvanised slip rail brackets",
+            "description": "Slip rail brackets are a very cost effective way of creating a temporary or semi permanent gateway in a fence line. The brackets are large enough for 4 inch by 2 inch rails, and the locking arm on one of the brackets keeps the rails in place once you've cut a small notch in the top of the rails. Easy to install and comes with fixings.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 15.95,
+            "trade-price": 12.75,
+            "main-category": 3,
+            "sub-category": 9,
+            "rating": null,
+            "image": "FASFIX1.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASFIX2",
+            "name": "One New Zealand gate chain 1000mm long",
+            "description": "We use these on all gates containing livestock as a back up to the main gate latch. 1 metre long with easy locking, and a large staple to drive into the gate post to secure. The chain head links to the provided drive in staple to lock. These are perfect for fencing metal gates and farm stables wooden gates.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 17.95,
+            "trade-price": 14.35,
+            "main-category": 3,
+            "sub-category": 9,
+            "rating": null,
+            "image": "FASFIX2.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASFIX3",
+            "name": "Two number safety gate chains and hooks",
+            "description": "We use these on most of our field gate installations as a back up to the main latches. They are a cost effective way for temporary fixings on a wooden gate in a field or for low traffic areas on private land where livestock aren't present.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 13.95,
+            "trade-price": 11.15,
+            "main-category": 3,
+            "sub-category": 9,
+            "rating": null,
+            "image": "FASFIX3.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASFEN1",
+            "name": "50 - M12 x 90mm Coach bolts BZP",
+            "description": "These M12 x 90mm Coach bolts are bright zinc plated to be used for wooden gates and posts fixings. They are a valuable fencing tool. Also supplied with nuts. More sizes are available on request.",
+            "material": "BZP",
+            "brand": "Sitemate",
+            "price": 22.95,
+            "trade-price": 18.35,
+            "main-category": 3,
+            "sub-category": 10,
+            "rating": null,
+            "image": "FASFEN1.jpg"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASFEN2",
+            "name": "20 - 100mm timber lock screws",
+            "description": "High quality incredibly strong hex head timber lock screws supplied with bit holder. Used for fencing sleepers and other uses on farm constructions. A large diameter flange means you can easily remove the driver bit after use. Self-countersinking head. Cutter tip size 6.5mm making it easier to drive the screw in. Corrosion resistant ruspert green finish – 1,000 hours salt spray tested. Ideal for use across a variety of specialist jobs, including decking, landscaping sleepers, rafters and fencing. The hardened screw has been designed to cut in to wood easily. Added strength allows the screws to be used with impact drivers. Maximum grip is achieved through dynamic thread profiles that hold the fixing in place. Heat treated carbon steel",
+            "material": "Steel (Galvanised)",
+            "brand": "Sitemate",
+            "price": 12.95,
+            "trade-price": 10.35,
+            "main-category": 3,
+            "sub-category": 10,
+            "rating": null,
+            "image": "FASFEN2.jpg"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASFEN3",
+            "name": "10 - BZP 300mm long welded eye bolts",
+            "description": "Supplied with 2 nuts and 2 washers per bolt for ease of use. Perfect for chainlink fencing line wires and barbed wire. There are many other uses to tension wire. We also stock 200mm and 250mm versions. Bulk discounts are also available on request.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 19.95,
+            "trade-price": 15.95,
+            "main-category": 3,
+            "sub-category": 10,
+            "rating": null,
+            "image": "FASFEN3.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "products.product",
+        "fields": {
+            "sku": "FASFEN4",
+            "name": "Box of CL-22 Netting clips",
+            "description": "To be used with gordian netting guns 1000 pieces per box. Great for use with rabbit netting, chicken netting and other wire application for farm fences and gates.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 11.95,
+            "trade-price": 9.55,
+            "main-category": 3,
+            "sub-category": 10,
+            "rating": null,
+            "image": "FASFEN4.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECDRO1",
+            "name": "Two 18 inch garage door drop bolts",
+            "description": "This pair of 18 inch garage door drop bolts is great for garage doors, stable doors and other applicatons. It can also be used as wooden gate drop bolts. Very strong and durable galvanised steel. Easy to install and comes with all fixings needed.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 29.95,
+            "trade-price": 23.95,
+            "main-category": 4,
+            "sub-category": 11,
+            "rating": null,
+            "image": "SECDRO1.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECDRO2",
+            "name": "heavy duty Metal Gate drop bolt",
+            "description": "This heavy duty metal gate drop bolt is quick and easy to install to metal field gates. Comes with all the fixings needed to install. It clamps onto a metal gate and is perfect for heavy gates that need to be grounded. Perfect for metal field gates, stable gates and more.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 45.95,
+            "trade-price": 36.75,
+            "main-category": 4,
+            "sub-category": 11,
+            "rating": null,
+            "image": "SECDRO2.jpg"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECDRO3",
+            "name": "18 inch garage door drop bolt",
+            "description": "This single 18 inch garage door drop bolt is great for garage doors, stable doors and other applicatons. It can also be used as wooden gate drop bolts. Very strong and durable galvanised steel. Easy to install and comes with all fixings needed.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 15.95,
+            "trade-price": 12.75,
+            "main-category": 4,
+            "sub-category": 11,
+            "rating": null,
+            "image": "SECDRO3.jpg"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECZED1",
+            "name": "Zedlock wooden gate locking system",
+            "description": "Perfect for locking 5 bar wooden gates hanging between posts. We also supply the metal gate zedlocks. Designed in the UK the Zedlock is a  is a unique, premium quality, patented long throw lock; ideal for securing any large gate and a great replacement for a padlock and chain. Please note, the lock does not come with the latch bracket (we can sell these separately if you want one). This epoxy black on galvanised steel option is suitable for Wooden Field Gates with 75mm styles. Comes with fixing screws & bolts and auger bit (you will need a 13mm auger bit). Two keys. It's advisable that the gate stile gap to the post should be no more than 40mm. Please note this is a limited offer as Zedlock have replaced this lock with a more expensive stainless steel version.",
+            "material": "Steel (Galvanised)",
+            "brand": "Zedlock",
+            "price": 39.95,
+            "trade-price": 31.95,
+            "main-category": 4,
+            "sub-category": 12,
+            "rating": null,
+            "image": "SECZED1.jpg"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECZED2",
+            "name": "Zedlock metal gate locking system",
+            "description": "The Gatemate® Zedlock® is a unique, premium quality, patented long throw lock. Ideal for securing any large gate and a great replacement for a padlock and chain. Easy to install. Comes with drill bit for the large holes - you will need a 13mm drill bit. Screws/bolts and Allen keys to install. Extremely strong and secure lock for metal field gates. 2 keys. Suitable for gates with 50mm metal gate stiles. We advise that there is no greater gap than 40mm from the gate to the post to work properly..70mm bolt throw. 3 lever lock mechanism",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 39.95,
+            "trade-price": 31.95,
+            "main-category": 4,
+            "sub-category": 12,
+            "rating": null,
+            "image": "SECZED2.jpg"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECZED3",
+            "name": "Zedlock gate locking system with surface mounting kit",
+            "description": "Mounting kit allows lock to be fitted to doors and gates flush to the gate post or door frame externally, can also be used as a drop bolt lock for garage doors. Perfect for locking 5 bar wooden gates hanging between posts. We also supply the metal gate Zedlocks at the same price. Designed in the UK, the Gatemate® Zedlock® is a unique, premium quality, patented long throw lock; ideal for securing any large gate and a great replacement for a padlock and chain. This epoxy black on galvanised steel option is suitable for Wooden Field Gates with 75mm styles. Comes with fixing screws & bolts and auger bit. Two keys. It's advisable that the gate stile gap to the post should be no more than 40mm ",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 57.95,
+            "trade-price": 46.35,
+            "main-category": 4,
+            "sub-category": 12,
+            "rating": null,
+            "image": "SECZED3.jpg"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECBRE1",
+            "name": "6 inch Black Brenton Bolt",
+            "description": "This 6 inch black brenton bolt is easy to use and install, ideal for gates and doors. Padlockable catch. Comes with all screws to install.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 8.95,
+            "trade-price": 7.15,
+            "main-category": 4,
+            "sub-category": 13,
+            "rating": null,
+            "image": "SECBRE1.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECBRE2",
+            "name": "6 inch BZP ring latch & brenton padlockable bolt ",
+            "description": "One 6 inch bright zinc plated latch and one bzp 6 inch brenton padlockable bolt. Comes with all scews to install.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 19.95,
+            "trade-price": 15.95,
+            "main-category": 4,
+            "sub-category": 13,
+            "rating": null,
+            "image": "SECBRE2.jpg"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECBRE3",
+            "name": "Two galvanised heavy duty 12 inch padlockable bolts",
+            "description": "A pair of galvanised heavy duty 12 inch padlockable bolts. Heavy duty, very strong and padlockable. Fully galvanised, comes with screws to install. Perfect for gates, wooden doors and other applications.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 26.95,
+            "trade-price": 21.55,
+            "main-category": 4,
+            "sub-category": 13,
+            "rating": null,
+            "image": "SECBRE3.jpg"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECANI1",
+            "name": "Single Spring Loaded Animal bolt - 1/2 inch diameter shoot",
+            "description": "A single spring loaded animal bolt with a 1/2 inch diameter shoot. Easy to install wooden and field gates, spring loaded and can be locked in an open position for ease of use. We use these on small garden gates as they're reliable and easy to use.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 10.95,
+            "trade-price": 8.75,
+            "main-category": 4,
+            "sub-category": 14,
+            "rating": null,
+            "image": "SECANI1.jpg"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECANI2",
+            "name": "Two Spring Loaded Animal bolt - 1/2 inch diameter shoot",
+            "description": "Two spring loaded animal bolt with a 1/2 inch diameter shoot. Easy to install wooden and field gates, spring loaded and can be locked in an open position for ease of use. We use these on small garden gates as they're reliable and easy to use.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 20.95,
+            "trade-price": 16.75,
+            "main-category": 4,
+            "sub-category": 14,
+            "rating": null,
+            "image": "SECANI2.jpg"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "sku": "SECANI3",
+            "name": "2 of auto lock tamper proof animal bolts",
+            "description": "These clever little bolts prevent tampering from livestock especially horses that have a tendancy to unlock the gate or doors by themselves. 12mm shoot pin with a galvanised finish. Perfect for stable doors and comes with all screws to install.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 25.95,
+            "trade-price": 20.75,
+            "main-category": 4,
+            "sub-category": 14,
+            "rating": null,
+            "image": "SECANI3.jpg"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "sku": "GATWHE1",
+            "name": "Heavy duty spring loaded gate wheel",
+            "description": "Very high weight capacity, we've recently used these on a pair of 9 foot wide TGV entrance gates. Easy to install on wooden gates and field gates, also available in galvanised finish.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 55.95,
+            "trade-price": 44.75,
+            "main-category": 6,
+            "sub-category": null,
+            "rating": null,
+            "image": "GATWHE1.png"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "sku": "GATWHE2",
+            "name": "Bolt on heavy duty metal gate wheel",
+            "description": "Very high weight capacity, simply clamps onto existing metal field gates. 160mm diameter rubber tyre with axle roller bearing. Fits 50mm wide gate stiles. Easy to install.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 52.95,
+            "trade-price": 42.35,
+            "main-category": 6,
+            "sub-category": null,
+            "rating": null,
+            "image": "GATWHE2.jpg"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "sku": "GATWHE3",
+            "name": "Medium duty gate wheel",
+            "description": "Very strong for the small size, suitable for medium weight gates. Comes with all fixings needed to install. Perfect for driveway gates, wooden gates in a field that don't require a heavy duty wheel.",
+            "material": "Steel (Galvanised)",
+            "brand": "Unbranded",
+            "price": 25.95,
+            "trade-price": 20.75,
+            "main-category": 6,
+            "sub-category": null,
+            "rating": null,
+            "image": "GATWHE3.jpg"
+        }
+    }
+]

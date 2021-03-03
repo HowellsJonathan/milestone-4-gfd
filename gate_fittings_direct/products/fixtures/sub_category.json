@@ -5,7 +5,8 @@
         "fields": {
             "name": "mortice_latches",
             "friendly_name": "Mortice Latches",
-            "main_category": 2
+            "main_category": 2,
+            "image": "mortlatch-cat.jpg"
         }
     },
     {
@@ -14,7 +15,8 @@
         "fields": {
             "name": "equine_latches",
             "friendly_name": "Equine Latches",
-            "main_category": 2
+            "main_category": 2,
+            "image": "equilatch-cat.jpg"
         }
     },
     {
@@ -23,7 +25,8 @@
         "fields": {
             "name": "uni_gate_latches",
             "friendly_name": "Uni Gate Latch Systems",
-            "main_category": 2
+            "main_category": 2,
+            "image": "unilatch-cat.jpg"
         }
     },
     {
@@ -32,7 +35,8 @@
         "fields": {
             "name": "ring_latches",
             "friendly_name": "Ring Latches",
-            "main_category": 2
+            "main_category": 2,
+            "image": "ringlatch-cat.jpg"
         }
     },
     {
@@ -41,7 +45,8 @@
         "fields": {
             "name": "heavy_reversible_hinges",
             "friendly_name": "Heavy Reversible Hinges",
-            "main_category": 1
+            "main_category": 1,
+            "image": "heavhinge-cat.jpg"
         }
     },
     {
@@ -50,7 +55,8 @@
         "fields": {
             "name": "adjustable_band_hinges",
             "friendly_name": "Adjustable Band Hinges",
-            "main_category": 1
+            "main_category": 1,
+            "image": "bandhinges-cat.jpg"
         }
     },
     {
@@ -59,7 +65,8 @@
         "fields": {
             "name": "field_gate_hinges",
             "friendly_name": "Field Gate Hinges",
-            "main_category": 1
+            "main_category": 1,
+            "image": "fielhinge-cat.jpg"
         }
     },
     {
@@ -68,25 +75,28 @@
         "fields": {
             "name": "gate_strikers",
             "friendly_name": "Gate Strikers",
-            "main_category": 3
+            "main_category": 3,
+            "image": "strifastener-cat.jpg"
         }
     },
     {
         "pk": 9,
         "model": "products.sub_category",
         "fields": {
-            "name": "gate_fasteners",
-            "friendly_name": "Gate Fasteners",
-            "main_category": 3
+            "name": "gate_fasteners_and_fixings",
+            "friendly_name": "Gate Fasteners & Fixings",
+            "main_category": 3,
+            "image": "gatefasteners-cat.jpg"
         }
     },
     {
         "pk": 10,
         "model": "products.sub_category",
         "fields": {
-            "name": "fencing_tools",
-            "friendly_name": "Fencing Tools",
-            "main_category": 3
+            "name": "fencing_products",
+            "friendly_name": "Fencing Products",
+            "main_category": 3,
+            "image": "fencfasteners-cat.jpg"
         }
     },
     {
@@ -95,7 +105,8 @@
         "fields": {
             "name": "drop_bolts",
             "friendly_name": "Drop Bolts",
-            "main_category": 4
+            "main_category": 4,
+            "image": "dropsecurity-cat.png"
         }
     },
     {
@@ -104,7 +115,8 @@
         "fields": {
             "name": "zedlocks",
             "friendly_name": "Zedlocks",
-            "main_category": 4
+            "main_category": 4,
+            "image": "zedlsecurity-cat.jpg"
         }
     },
     {
@@ -113,7 +125,8 @@
         "fields": {
             "name": "brenton_bolts",
             "friendly_name": "Brenton Bolts",
-            "main_category": 4
+            "main_category": 4,
+            "image": "brensecurity-cat.jpg"
         }
     },
     {
@@ -122,7 +135,8 @@
         "fields": {
             "name": "animal_bolts",
             "friendly_name": "Animal Bolts",
-            "main_category": 4
+            "main_category": 4,
+            "image": "animsecurity-cat.jpg"
         }
     }
 ]
