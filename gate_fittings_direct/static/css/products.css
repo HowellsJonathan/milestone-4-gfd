@@ -24,3 +24,21 @@
     bottom: 0;
     left: 0;
 }
+
+.product-btn {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid #288fbd;
+    border-radius: 0.25rem;
+    background: none;
+    height: 30px;
+    font-size: 0.9rem;
+    transition: 0.25s;
+}
+
+.product-btn:hover,
+.product-btn:focus {
+    box-shadow: inset 300px 0 0 0 #288fbd;
+}
