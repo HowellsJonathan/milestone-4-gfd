@@ -1,0 +1,6 @@
+/** @format */
+
+.card-border {
+    border: solid 1px #cacaca;
+    border-radius: 0.2rem;
+}

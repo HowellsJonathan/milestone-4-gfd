@@ -8,7 +8,6 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 body {
@@ -55,6 +54,16 @@ nav .row {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #fff;
+    z-index: -1;
 }
 
 /* Navbar */
