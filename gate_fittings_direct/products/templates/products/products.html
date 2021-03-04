@@ -26,13 +26,13 @@
                                 <div class="row">
                                     <div class="col-6">
                                         {% if product.image %}
-                                            <a href="#">
+                                            <a href="{% url 'product_detail' product_id %}">
                                                 <div class="product-img-container">
                                                     <img src="../../../media/{{ product.image }}" class="centered-img" alt="{{ product.name }}">
                                                 </div>
                                             </a>
                                         {% else %}
-                                            <a href="#">
+                                            <a href="{% url 'product_detail' product_id %}">
                                                 <div class="product-img-container">
                                                     <img src="{{ MEDIA_URL }}noimage.png" class="centered-img" alt="{{ product.name }}">
                                                 </div>
@@ -41,7 +41,9 @@
                                     </div>
                                     <div class="col-6 pl-0">
                                         <div class="card-body px-0 py-0">
-                                            <p class="mb-0 text-capitalize">{{ product.name }}</p>
+                                            <a href="{% url 'product_detail' product_id %}">
+                                                <p class="mb-0 text-capitalize">{{ product.name }}</p>
+                                            </a>
                                         </div>
                                         <div class="card-footer bg-white py-0 px-0 border-0 text-left">
                                             <div class="row">
@@ -52,7 +54,7 @@
                                                     {% else %}
                                                         <small class="text-muted">No Rating</small>
                                                     {% endif %}
-                                                    <p class="lead mb-0 text-left font-weight-bolt">£{{ product.price }}</p>
+                                                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
                                                 </div>
                                             </div>
                                         </div>        
