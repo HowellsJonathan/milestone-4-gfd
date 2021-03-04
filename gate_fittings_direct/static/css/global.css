@@ -12,6 +12,8 @@ body {
 
 body {
     font-family: "Spectral", sans-serif;
+    padding-top: 80px;
+    height: calc(100vh - 80px);
 }
 
 .blue-bg {

@@ -37,8 +37,8 @@
 
     <body>
 
-        <header>
-            <nav class="navbar fixed-top">
+        <header class="fixed-top">
+            <nav class="navbar">
                 
                 {% if request.user_agent.is_mobile %}
                     {% include 'includes/mobile_nav.html' %}
