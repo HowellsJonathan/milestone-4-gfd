@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django_bootstrap_breadcrumbs',
     'home',
     'products',
+    'bag',
 ]
 
 MIDDLEWARE = [

@@ -70,6 +70,18 @@ nav .row {
 
 /* Navbar */
 
+#top-nav {
+    font-size: 0.8rem;
+}
+
+.nav-arrow-size {
+    font-size: 0.6rem;
+}
+
+.view-all-link {
+    font-size: 0.8rem;
+}
+
 .navbar {
     padding: 0;
     background: #373737;
