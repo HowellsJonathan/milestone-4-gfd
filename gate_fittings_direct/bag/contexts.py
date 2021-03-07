@@ -25,7 +25,7 @@ def bag_contents(request):
     # if total is less than free delivery amount add delivery cost onto 
     # checkout
     if total < settings.FREE_DELIVERY_THRESHOLD:
-        delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE)
+        delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
         free_delivery_delta = settings.FREE_DELIVERY_THRESHOLD - total
     else:
         # if total is over threshold delivery is £0
