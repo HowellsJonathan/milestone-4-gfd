@@ -9,29 +9,38 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col text-center mt-3">
-                <h2 class="logo-font">Products</h2>
-                <hr class="w-50 mb-1">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <a href="#" class="orderby-dropdown-link dropdown-toggle" id="orderby" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    Order By
-                </a>
-                <div id="orderby-dropdown" class="dropdown-menu" aria-labelledby="orderby">
-                    <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By price: low to high</a>
-                    <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">By price: high to low</a>
-                    <a href="{% url 'products' %}?sort=name&direction=asc" class="dropdown-item">By name</a>
-                    <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By rating</a>
+            <div class="col-2">
+                <div class="category-nav">
+                    <h2>
+                        {% if search_term %}
+                            {{ search_term }}
+                        {% else %}
+                            {% for c in current_category %}
+                                {{ c.friendly_name }}
+                            {% endfor %}
+                        {%endif%}
+                    </h2>
+                    <p>
+                        {{ products|length }} products {% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                    </p>
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="product-container col-10 offset-1">
+            <div class="product-container col-10">
                 <div class="row mt-1 mb-2">
-
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#" class="orderby-dropdown-link dropdown-toggle" id="orderby" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Order By
+                        </a>
+                        <div id="orderby-dropdown" class="dropdown-menu" aria-labelledby="orderby">
+                            <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By price: low to high</a>
+                            <a href="{% url 'products' %}?sort=price&direction=desc" class="dropdown-item">By price: high to low</a>
+                            <a href="{% url 'products' %}?sort=name&direction=asc" class="dropdown-item">By name</a>
+                            <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item">By rating</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
                     {% for product in products %}
