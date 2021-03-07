@@ -1,4 +1,5 @@
 {% load static %}
+{% load django_bootstrap_breadcrumbs %}
 
 <!doctype html>
 <html lang="en">
@@ -52,6 +53,11 @@
         </header>
 
 
+        {% block breadcrumbs %}
+            {% clear_breadcrumbs %}
+            {% breadcrumb "base.html" "/" %}
+        {% endblock %}
+
         {% if messages %}
             <div class="message-container"></div>
         {% endif %}
@@ -60,6 +66,26 @@
         {% endblock %}
 
         {% block content %}
+            {% render_breadcrumbs "django_bootstrap_breadcrumbs/bootstrap4.html" %}
+
+            <div class="row">
+                <div class="col">
+                    <ul class="breadcrumb">
+                        {% for url, label in breadcrumbs %}
+                            <li>
+                                {% ifnotequal forloop.counter breadcrumbs_total %}
+                                    <a href="{{ url }}">{{ label|safe }}</a>
+                                {% else %}
+                                    {{ label|safe }}
+                                {% endifnotequal %}
+                                {% if not forloop.last %}
+                                    <span class="divider">/</span>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
         {% endblock %}
 
         {% block postloadjs %}

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'django_user_agents',
+    'django_bootstrap_breadcrumbs',
     'home',
     'products',
 ]
