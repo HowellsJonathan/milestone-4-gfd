@@ -1,5 +1,24 @@
 /** @format */
 
-.bag-item-cont {
+.bag-item-cont,
+.item-img-cont {
     height: 230px;
+}
+
+.table {
+    border-collapse: separate;
+    border-spacing: 0px 1rem;
+}
+
+.bag-item-cont .left-border {
+    border-left: 1px solid #ccc;
+}
+
+.bag-item-cont .right-border {
+    border-right: 1px solid #ccc;
+}
+
+.bag-item-cont .top-bottom-border {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }

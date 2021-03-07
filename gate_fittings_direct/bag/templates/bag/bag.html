@@ -19,7 +19,7 @@
             <div class="col">
                 {% if bag_items %}
                     <div class="table-responsive rounded">
-                        <table class="table table-sm table-borderless">
+                        <table class="table table-borderless">
                             <thead class="text-black">
                                 <tr>
                                     <th scope="col">Product Info</th>
@@ -31,39 +31,51 @@
                             </thead>
                             {% for item in bag_items %}
                                 <tr class="bag-item-cont">
-                                    <td class="w-25">
+                                    <td class="w-25 item-img-cont left-border top-bottom-border">
                                         <img class="img-fluid" src="../../../media/{{ item.product.image }}" alt="{{ item.product.name }}">
                                     </td>
-                                    <td class="">
+                                    <td class="top-bottom-border">
                                         <p>{{ item.product.name }}</p>
                                         <p class="small text-muted">{{ item.product.sku }}</p>
                                     </td>
-                                    <td class="w-25">
-                                        <p>{{ item.quantity }}</p>
+                                    <td class="w-25 top-bottom-border right-border">
+                                        <form action="" class="form update-q-form" method="POST">
+                                            {% csrf_token %}
+                                            <div class="form-group">
+                                                <div class="input">
+                                                    <input class="form-control form-control-sm qty_input" type="number"
+                                                        name="quantity" value="{{ item.quantity }}" min="1" max="99"
+                                                        data-item_id="{{ item.item_id }}"
+                                                        id="id_qty_{{ item.item_id }}">
+                                                </div>
+                                            </div>
+                                        </form>
+                                        <a class="update-q-link text-info">Update</a>
+                                        <a class="remove-item" id="remove_{{ item.item_id }}"></a>
                                     </td>
-                                    <td>
+                                    <td class="top-bottom-border">
                                         <p>£{{ item.product.price }}</p>
                                     </td>
-                                    <td>
+                                    <td class="top-bottom-border right-border">
                                         <p>£{{ item.product.price }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
                             <tr>
                                 <td colspan="5" class="pt-5 text-right">
-                                    <h6><strong>Bag Total: ${{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                    <h6><strong>Bag Total: £{{ total|floatformat:2 }}</strong></h6>
+                                    <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                                    <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                                     {% if free_delivery_delta > 0 %}
                                         <p class="mb-1 text-danger">
-                                            You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
+                                            You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
                                         </p>
                                     {% endif %}
                                 </td>
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="#" class="btn btn-black btn-lg">
+                                    <a href="#" class="btn checkout-btn">
                                         <span class="text-capitalize">Checkout Securely</span>
                                     </a>
                                 </td>
