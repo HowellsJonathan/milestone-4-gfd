@@ -3,6 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, sub_category
 from django_user_agents.utils import get_user_agent
+from django.db.models.functions import Lower
 
 # Create your views here.
 
@@ -12,8 +13,23 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     Subcategory = None
+    sort = None
+    direction = None
 
     if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
         if 'SubCategory' in request.GET:
             Subcategory = request.GET['SubCategory']
             products = products.filter(sub_category__name=Subcategory)
@@ -28,10 +44,13 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(sku__icontains=query)
             products = products.filter(queries)
 
+    current_sorting = f'{sort}_{direction}'
+
     context = {
         'products': products,
         'search_term': query,
         'current_category': Subcategory,
+        'current_sorting': current_sorting,
     }
 
     user_agent = get_user_agent(request)
