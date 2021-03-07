@@ -115,3 +115,53 @@ nav .row {
     max-height: 100%;
     margin: auto;
 }
+
+/* Search Bar */
+
+.searchbar {
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 25px;
+    background-color: transparent;
+    border-radius: 30px;
+    padding: 5px;
+}
+
+.searchbar:hover,
+.searchbar:focus {
+    background-color: #fff;
+}
+
+.search-input {
+    color: black;
+    border: 0;
+    outline: 0;
+    background: none;
+    width: 0;
+    line-height: 25px;
+
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search-input {
+    padding: 0 5px;
+    width: 200px;
+
+    transition: width 0.4s linear;
+}
+
+.searchbar:hover > .search-icon {
+    color: #000;
+}
+
+.search-icon {
+    height: 20px;
+    width: 20px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+}
