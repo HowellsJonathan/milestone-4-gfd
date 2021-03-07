@@ -1,4 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, reverse, redirect
+from django.contrib import messages
+from django.db.models import Q
 from .models import Product
 from django_user_agents.utils import get_user_agent
 
@@ -8,9 +10,21 @@ def all_products(request):
     """ A View to return all_products page including sorting and queries """
 
     products = Product.objects.all()
+    query = None
+
+    if request.GET:
+        if 'q' in request.GET:
+            query = request.GET['q']
+            if not query:
+                messages.error(request, "You didn't enter any search criteria!")
+                return redirect(reverse('products'))
+
+            queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(sku__icontains=query)
+            products = products.filter(queries)
 
     context = {
         'products': products,
+        'search_term': query,
     }
 
     user_agent = get_user_agent(request)
