@@ -1,41 +1,39 @@
-<div class="container nav-container">
+<div class="container">
     <div class="row">
-        <div class="col-3">
-            <a href="/" class="header-logo flex-row-center">
+        <div class="col-2">
+            <a href="/" class="header-logo">
                 <img src="../../media/GFD2.png" alt="Gate Fittings Direct 4 Trade">
             </a>
         </div>
-        <div class="col-9">
-            <div class="row" id="top-nav">
-                <div class="col-10">
-                    <div class="navbar-form searchbar-box">
-                        <div class="input-group">
-                            <form action="{% url 'products' %}" method="GET" class="search-bar flex">
+        <div class="col-10">
+            <div class="row">
+                <div class="col">
+                    <ul class="flex my-0 navbar-nav">
+                        <li class="nav-item flex">
+                            <form action="{% url 'products' %}" method="GET" class="search-bar">
                                 <input type="text" name="q" placeholder="Search..." class="search-input">
                                 <button type="submit" class="search-submit"><i class="fas fa-search"></i></button>
                             </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-2 pr-0">
-                    <li class="nav-item flex">
-                        <button class="vat-switch"></button>
-                    </li>
+                        </li>
+                        <li class="nav-item flex">
+                            <button class="vat-switch"></button>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="row" id="bottom-nav">
+            <div class="row">
                 <div class="col-8">
-                    <ul class="navbar-nav flex-row align-bottom my-0 text-white">
+                    <ul class="navbar-nav flex my-0 text-white">
                         <li class="nav-item dropdown mega-dropdown">
-                            <a href="#" class="nav-link dropdown-toggle text-white" id="productsDropdown" data-toggle="dropdown"
+                            <a href="#" class="nav-link dropdown-toggle" id="productsDropdown" data-toggle="dropdown"
                                 aria-haspopup="true" aria-expanded="false">
                                 Products
                             </a>
-                            <div class="dropdown-menu mega-menu v-2 py-3 px-3" aria-labelledby="productsDropdown">
+                            <div class="dropdown-menu mega-menu v-2 py-5 px-3" aria-labelledby="productsDropdown">
                                 <div class="row">
                                     <div class="col-3 sub-menu">
                                         <span class="cat-header">
-                                            <a href="{% url 'products' %}MainCategory=hinges">Hinges</a>
+                                            <a href="{% url 'products' %}MainCategory=hinges"></a>
                                         </span>
                                         <ul>
                                             <li>
@@ -70,7 +68,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="nav-item px-5">
+                        <li class="nav-item px-4">
                             <a href="#" class="nav-link pl-0 text-white">Contact</a>
                         </li>
                         <li class="nav-item">
@@ -78,9 +76,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-4 pr-0">
-                    <ul class="navbar-nav my-0 text-white flex-row justify-content-end">
-                        <li class="nav-item flex pr-4">
+                <div class="col-4">
+                    <ul class="navbar-nav flex my-0 text-white">
+                        <li class="nav-item flex">
                             {% if request.user.is_authenticated %}
                                 <a href="#" class="nav-link text-white flex">
                                     <div><i class="fas fa-user pr-2"></i></div>
