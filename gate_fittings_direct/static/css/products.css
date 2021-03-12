@@ -36,9 +36,21 @@
     height: 30px;
     font-size: 0.9rem;
     transition: 0.25s;
+    color: #000;
 }
 
 .product-btn:hover,
 .product-btn:focus {
     box-shadow: inset 300px 0 0 0 #288fbd;
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-body a {
+    color: #000;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: #288fbd;
 }
