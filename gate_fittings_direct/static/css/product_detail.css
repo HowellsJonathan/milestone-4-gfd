@@ -86,3 +86,12 @@
     font-size: 1rem;
     text-decoration: none;
 }
+
+.checkout-btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hvr-bounce-to-right:before {
+    background: #43464b;
+}
