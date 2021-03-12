@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, sub_category
+from .models import Product, sub_category, main_category
 from django_user_agents.utils import get_user_agent
 from django.db.models.functions import Lower
 
@@ -12,7 +12,7 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
-    Subcategory = None
+    category = None
     sort = None
     direction = None
 
@@ -33,7 +33,7 @@ def all_products(request):
         if 'MainCategory' in request.GET:
             category = request.GET['MainCategory']
             products = products.filter(main_category__name=category)
-            category = sub_category.objects.filter(name=category)
+            category = main_category.objects.filter(name=category)
 
         if 'SubCategory' in request.GET:
             category = request.GET['SubCategory']
