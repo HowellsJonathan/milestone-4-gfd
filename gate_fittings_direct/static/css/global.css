@@ -164,12 +164,16 @@ nav .row {
 /* Dropdown */
 
 .sub-menu a {
-    color: #fff;
+    color: #ccc;
 }
 
 .cat-header {
     border-bottom: 2px solid #288fbd;
     font-size: 1.2rem;
+}
+
+.cat-header a {
+    color: #fff;
 }
 
 .mega-dropdown {
@@ -182,4 +186,9 @@ nav .row {
     border-radius: 0;
     border: none;
     margin-top: 0;
+}
+
+.sub-bullet-point {
+    color: #ccc;
+    font-size: 0.8rem;
 }
