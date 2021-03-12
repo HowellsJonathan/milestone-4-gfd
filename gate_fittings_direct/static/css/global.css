@@ -116,26 +116,11 @@ nav .row {
     background-color: #e6e6e6;
 }
 
-.mega-dropdown {
-    position: static;
-}
-
-.mega-dropdown .mega-menu {
-    position: absolute;
-    background: #373737;
-    border-radius: 0;
-    border: none;
-}
-
 .img-fluid {
     display: block;
     max-width: 100%;
     max-height: 100%;
     margin: auto;
-}
-
-.cat-header {
-    border-bottom: 2px solid #288fbd;
 }
 
 /* Search Bar */
@@ -174,4 +159,27 @@ nav .row {
         width: 1108px;
         left: -264px;
     }
+}
+
+/* Dropdown */
+
+.sub-menu a {
+    color: #fff;
+}
+
+.cat-header {
+    border-bottom: 2px solid #288fbd;
+    font-size: 1.2rem;
+}
+
+.mega-dropdown {
+    position: static;
+}
+
+.mega-dropdown .mega-menu {
+    position: absolute;
+    background-color: rgb(0, 0, 0, 0.8);
+    border-radius: 0;
+    border: none;
+    margin-top: 0;
 }
