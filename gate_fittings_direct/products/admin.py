@@ -16,6 +16,7 @@ class ProductAdmin(admin.ModelAdmin):
 
     ordering = ('sku', )
 
+
 class Main_categoryAdmin(admin.ModelAdmin):
     list_display = (
         'friendly_name',

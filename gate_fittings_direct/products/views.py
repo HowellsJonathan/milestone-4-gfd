@@ -30,10 +30,15 @@ def all_products(request):
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
 
+        if 'MainCategory' in request.GET:
+            category = request.GET['MainCategory']
+            products = products.filter(main_category__name=category)
+            category = sub_category.objects.filter(name=category)
+
         if 'SubCategory' in request.GET:
-            Subcategory = request.GET['SubCategory']
-            products = products.filter(sub_category__name=Subcategory)
-            Subcategory = sub_category.objects.filter(name=Subcategory)
+            category = request.GET['SubCategory']
+            products = products.filter(sub_category__name=category)
+            category = sub_category.objects.filter(name=category)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -49,7 +54,7 @@ def all_products(request):
     context = {
         'products': products,
         'search_term': query,
-        'current_category': Subcategory,
+        'current_category': category,
         'current_sorting': current_sorting,
     }
 
