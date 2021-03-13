@@ -64,4 +64,6 @@ body {
     z-index: -1;
 }
 
-/* Navbar */
+.container {
+    overflow-x: hidden;
+}

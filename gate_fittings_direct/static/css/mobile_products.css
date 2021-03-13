@@ -1,0 +1,32 @@
+/** @format */
+
+.product-img-container {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+}
+
+.centered-img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.card-border {
+    border-radius: 0.2rem;
+    box-shadow: 1px 4px 6px -2px rgb(0, 0, 0, 0.2);
+}
+
+.basket-btn {
+    width: 100%;
+    height: 2rem;
+    background-color: #288fbd;
+    color: #fff;
+    border: 0;
+    border-radius: 0.1rem;
+}
+
+.small-text {
+    font-size: 0.8rem;
+}

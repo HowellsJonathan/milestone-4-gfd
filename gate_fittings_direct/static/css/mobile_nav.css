@@ -1,5 +1,9 @@
 /** @format */
 
+body {
+    overflow-x: hidden;
+}
+
 .navbar .container {
     padding: 0;
 }
