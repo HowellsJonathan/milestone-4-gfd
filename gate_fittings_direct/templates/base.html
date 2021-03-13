@@ -20,6 +20,13 @@
             <link rel="stylesheet" href="https://use.typekit.net/gwm6ukh.css">
             <link href="../static/css/hover-min.css" rel="stylesheet">
             <link rel="stylesheet" href="{% static 'css/global.css' %}">
+            {% if request.user_agent.is_mobile %}
+                <link rel="stylesheet" href="{% static 'css/mobile_nav.css' %}">
+                {% elif request.user_agent.is_tablet %}
+                <link rel="stylesheet" href="{% static 'css/mobile_nav.css' %}">
+                {% elif request.user_agent.is_pc %}
+                <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+                {% endif %}
         {% endblock %}
 
         {% block extra_css %}
