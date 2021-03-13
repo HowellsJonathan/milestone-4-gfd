@@ -89,6 +89,7 @@
 .dropdown-menu .main-cat {
     border-bottom: 1px solid #288fbd;
     color: #fff;
+    padding-left: 0.3rem;
 }
 
 .dropdown-menu a,

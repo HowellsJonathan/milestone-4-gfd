@@ -59,24 +59,41 @@
                                             <span class="sub-bullet-point">
                                                 <i class="fas fa-caret-right"></i>
                                             </span>
-                                            <a href="#" class="dropdown-item">Action</a>
+                                            <a href="{% url 'products' %}?MainCategory=hinges" class="dropdown-item">
+                                                All Products
+                                            </a>
                                         </li>
                                         <li class="flex align-center">
                                             <span class="sub-bullet-point">
                                                 <i class="fas fa-caret-right"></i>
                                             </span>
-                                            <a href="#" class="dropdown-item">Another Action</a>
+                                            <a href="{% url 'products' %}?SubCategory=adjustable_band_hinges" 
+                                                class="dropdown-item">
+                                                Adjustable Band Hinges
+                                            </a>
                                         </li>
                                         <li class="flex align-center">
                                             <span class="sub-bullet-point">
                                                 <i class="fas fa-caret-right"></i>
                                             </span>
-                                            <a href="#" class="dropdown-item">Just another action</a>
+                                            <a href="{% url 'products' %}?SubCategory=heavy_reversible_hinges" 
+                                                class="dropdown-item">
+                                                Heavy Reversible Hinges
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=field_gate_hinges" 
+                                                class="dropdown-item">
+                                                Field Gate Hinges
+                                            </a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li class="nav-link dropdown">
-                                    <a href="#" data-toggle="dropdown" class="dropdown-item dropdown-toggle main-cat"">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-item dropdown-toggle main-cat">
                                         Latches
                                     </a>
                                     <ul class="dropdown-menu">
@@ -84,23 +101,146 @@
                                             <span class="sub-bullet-point">
                                                 <i class="fas fa-caret-right"></i>
                                             </span>
-                                            <a href="#" class="dropdown-item">Action</a>
+                                            <a href="{% url 'products' %}?MainCategory=latches" class="dropdown-item">
+                                                All Products
+                                            </a>
                                         </li>
                                         <li class="flex align-center">
                                             <span class="sub-bullet-point">
                                                 <i class="fas fa-caret-right"></i>
                                             </span>
-                                            <a href="#" class="dropdown-item">Another Action</a>
+                                            <a href="{% url 'products' %}?SubCategory=mortice_latches" 
+                                                class="dropdown-item">
+                                                Mortice Latches
+                                            </a>
                                         </li>
                                         <li class="flex align-center">
                                             <span class="sub-bullet-point">
                                                 <i class="fas fa-caret-right"></i>
                                             </span>
-                                            <a href="#" class="dropdown-item">Just another action</a>
+                                            <a href="{% url 'products' %}?SubCategory=equine_latches" 
+                                                class="dropdown-item">
+                                                Equine Latches
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=uni_gate_latches" 
+                                                class="dropdown-item">
+                                                Uni Gate Latch Systems
+                                            </a>
                                         </li>
                                     </ul>
                                 </li>
+                                <li class="nav-link dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-item dropdown-toggle main-cat">
+                                        Fastenings & Fixings
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?MainCategory=fastenings_and_fixings" 
+                                                class="dropdown-item">
+                                                All Products
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=gate_strikers" 
+                                                class="dropdown-item">
+                                                Gate Strikers
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=gate_fasteners_and_fixings" 
+                                                class="dropdown-item">
+                                                Gate Fasteners & Fixings
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=fencing_products" 
+                                                class="dropdown-item">
+                                                Fencing Products
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link dropdown">
+                                    <a href="#" data-toggle="dropdown" class="dropdown-item dropdown-toggle main-cat">
+                                        Security & Locks
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?MainCategory=security_and_locks" 
+                                                class="dropdown-item">
+                                                All Products
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=drop_bolts" 
+                                                class="dropdown-item">
+                                                Drop Bolts
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=zedlocks" 
+                                                class="dropdown-item">
+                                                Zedlocks
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=brenton_bolts" 
+                                                class="dropdown-item">
+                                                Brenton Bolts
+                                            </a>
+                                        </li>
+                                        <li class="flex align-center">
+                                            <span class="sub-bullet-point">
+                                                <i class="fas fa-caret-right"></i>
+                                            </span>
+                                            <a href="{% url 'products' %}?SubCategory=animal_bolts" 
+                                                class="dropdown-item">
+                                                Animal Bolts
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-link main-cat">
+                                    <a href="{% url 'products' %}?MainCategory=gate_wheels">
+                                        Gate Wheels
+                                    </a>
+                                </li>
                             </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="text-white">Contact</a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a href="#" class="text-white">About Us</a>
                         </li>
                     </ul>
                 </div>  
