@@ -1,5 +1,9 @@
 /** @format */
 
+.container {
+    overflow-x: hidden;
+}
+
 body {
     overflow-x: hidden;
 }

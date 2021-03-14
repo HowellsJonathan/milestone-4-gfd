@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load mathfilters %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/mobile_product_details.css' %}">
@@ -34,7 +35,7 @@
             <div class="col-12">
                 <div>
                     <span class="text-muted">Price</span>
-                    <p class="lead mb-0 font-weight-bold price-text">£{{ product.price }}</p>
+                    <p class="lead mb-0 font-weight-bold price-text">£{{ product.price|div:1.2|floatformat:2 }}</p>
                     <span class="text-muted">exc. VAT</span>
                 </div>
                 <form action="{% url 'add_to_bag' product.id %}" class="form mt-3" method="POST">
