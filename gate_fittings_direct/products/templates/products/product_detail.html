@@ -37,12 +37,12 @@
                         {% endif %}
                     </div>
                     <div class="flex flex-column">
-                        <div id="excVat">
+                        <div class="excVat">
                             <span class="text-muted">Price</span>
                             <p class="lead mb-0 font-weight-bold price-text">£{{ product.price|div:1.2|floatformat:2 }}</p>
                             <span class="text-muted">exc. VAT</span>
                         </div>
-                        <div id="incVat">
+                        <div class="incVat">
                             <span class="text-muted">Price</span>
                             <p class="lead mb-0 font-weight-bold price-text">£{{ product.price }}</p>
                             <span class="text-muted">inc. VAT</span>

@@ -73,7 +73,10 @@
                                             <div class="card-footer">
                                                 <div class="row">
                                                     <div class="col-5">
-                                                        <p class="lead mb-0 text-left font-weight-bold text-black">
+                                                        <p class="excVat lead mb-0 text-left font-weight-bold text-black">
+                                                            £{{ product.price|div:1.2|floatformat:2 }}
+                                                        </p>
+                                                        <p class="incVat lead mb-0 text-left font-weight-bold text-black">
                                                             £{{ product.price }}
                                                         </p>
                                                     </div>

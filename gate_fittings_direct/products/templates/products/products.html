@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load mathfilters %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/products.css' %}">
@@ -78,7 +79,12 @@
                                                     {% else %}
                                                         <small class="text-muted">No Rating</small>
                                                     {% endif %}
-                                                    <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
+                                                    <p class="excVat lead mb-0 text-left font-weight-bold">
+                                                        £{{ product.price|div:1.2|floatformat:2 }}
+                                                    </p>
+                                                    <p class="incVat lead mb-0 text-left font-weight-bold">
+                                                        £{{ product.price }}
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>        
