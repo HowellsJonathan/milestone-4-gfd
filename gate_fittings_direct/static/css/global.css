@@ -63,3 +63,67 @@ body {
     background: #fff;
     z-index: -1;
 }
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.vat-switch input {
+    display: none;
+}
+
+.vat-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 2rem;
+    height: 24px;
+    width: 60px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.vat-slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 2px;
+    bottom: 2px;
+    background-color: #288fbd;
+    border-radius: 50%;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+input:checked + .vat-slider {
+    background-color: #000;
+}
+
+input:focus + .vat-slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+input:checked + .vat-slider:before {
+    -webkit-transform: translateX(36px);
+    -ms-transform: translateX(36px);
+    transform: translateX(36px);
+}
+
+.inc-vat-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.exc-vat-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

@@ -109,6 +109,10 @@
 
         <script>
             $('#mobileNavbar').bootnavbar();
+            $("#excVat").hide();
+            $("#changePrice").on("click", function () {
+                $("#incVat, #excVat").toggle(200);
+            });
         </script>
     </body>
 
