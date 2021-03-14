@@ -1,0 +1,21 @@
+<script type="text/javascript">
+    // Increment qty on button press
+    $('.increment-qty').click(function(e) {
+        // Prevent default button action
+        e.preventDefault();
+        // Find closest input box - go up from btn to find input group - and down DOM to qty_input
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        // Cache value currently in input 
+        var currentValue = parseInt($(closestInput).val());
+        // Use that cached value to + 1 to it in input
+        $(closestInput).val(currentValue + 1);
+    })
+
+    // Decrement qty on button press
+    $('.decrement-qty').click(function(e) {
+        e.preventDefault();
+        var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
+        var currentValue = parseInt($(closestInput).val());
+        $(closestInput).val(currentValue - 1);
+    })
+</script>
