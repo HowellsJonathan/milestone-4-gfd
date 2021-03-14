@@ -127,3 +127,15 @@ input:checked + .vat-slider:before {
     top: 0;
     right: 0;
 }
+
+.vat-toggler-cont {
+    position: relative;
+}
+
+@media screen and (max-width: 764px) {
+    .vat-slider {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

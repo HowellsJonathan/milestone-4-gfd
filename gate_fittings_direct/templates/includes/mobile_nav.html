@@ -42,7 +42,14 @@
                 <div class="collapse navbar-collapse" id="mobileNavContent">    
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <button class="mobile-vat-toggler"></button>
+                            <div class="vat-toggler-cont mb-3">
+                                <small class="text-white inc-vat-text">Inc. Vat</small>
+                                <label class="vat-switch">
+                                    <input type="checkbox" id="changePrice">
+                                    <span class="vat-slider"></span>
+                                </label>
+                                <small class="text-white exc-vat-text">Exc. Vat</small>
+                            </div>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="dropdown-toggle nav-link text-white" id="productDropdown" role="button"
