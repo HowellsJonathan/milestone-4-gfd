@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load mathfilters %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/product_detail.css' %}">
@@ -36,10 +37,15 @@
                         {% endif %}
                     </div>
                     <div class="flex flex-column">
-                        <div>
+                        <div id="excVat">
+                            <span class="text-muted">Price</span>
+                            <p class="lead mb-0 font-weight-bold price-text">£{{ product.price|div:1.2|floatformat:2 }}</p>
+                            <span class="text-muted">exc. VAT</span>
+                        </div>
+                        <div id="incVat">
                             <span class="text-muted">Price</span>
                             <p class="lead mb-0 font-weight-bold price-text">£{{ product.price }}</p>
-                            <small class="text-muted">exc. VAT</small>
+                            <span class="text-muted">inc. VAT</span>
                         </div>
                         <form action="{% url 'add_to_bag' product.id %}" class="form" method="POST">
                             {% csrf_token %}
@@ -121,4 +127,10 @@
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_input_script.html' %}
+<script type="text/javascript">
+    $("#excVat").hide();
+    $("#changePrice").on("click", function () {
+        $("#incVat, #excVat").toggle(200);
+    });
+</script>
 {% endblock %}
