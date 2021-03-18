@@ -12,13 +12,6 @@
     box-shadow: 1px 4px 6px -2px rgb(0, 0, 0, 0.2);
 }
 
-.centered-img {
-    display: block;
-    max-height: 100%;
-    max-width: 100%;
-    margin: auto;
-}
-
 .card-footer {
     position: absolute;
     bottom: 0;

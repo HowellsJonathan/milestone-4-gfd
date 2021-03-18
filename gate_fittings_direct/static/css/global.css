@@ -12,7 +12,7 @@ body {
 
 body {
     font-family: "Spectral", sans-serif;
-    padding-top: 150px;
+    padding-top: 110px;
     height: calc(100vh - 110px);
 }
 
@@ -138,4 +138,11 @@ input:checked + .vat-slider:before {
         left: 50%;
         transform: translateX(-50%);
     }
+}
+
+.centered-img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    margin: auto;
 }

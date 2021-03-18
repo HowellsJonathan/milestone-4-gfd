@@ -1,9 +1,82 @@
-{% extends 'base.html' %}
-{% load static %}
+<!-- @format -->
 
-{% block extra_css %}
-<link rel="stylesheet" href="{% static 'css/index.css' %}">
-{% endblock %}
+{% extends 'base.html' %} {% load static %} {% block extra_css %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}" />
+{% endblock %} {% block content %}
 
-{% block content %}
+<section>
+    <div class="index-bg-container">
+        <div class="index-title-container container">
+            <h3>Gate Fittings Direct 4 trade</h3>
+            <h1>Your one stop shop for gate fittings</h1>
+            <p>Supplying the nation with quality hand picked products</p>
+        </div>
+    </div>
+</section>
+<section class="index-callout-boxes container">
+    <div class="row">
+        <div class="col-4">
+            <div class="callout-img-cont">
+                <img
+                    src="../../../media/zedlsecurity-cat.jpg"
+                    alt="Zedlock Brand"
+                    class="centered-img"
+                />
+                <h4>Leading Manufacturers</h4>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="callout-img-cont">
+                <img
+                    src="../../../media/fielhinge-cat.jpg"
+                    alt="Field Gate Hinge"
+                    class="centered-img"
+                />
+                <div class="callout-bg">
+                    <h4>300+ Products in stock</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="callout-img-cont">
+                <img
+                    src="../../../media/ringlatch-cat.jpg"
+                    alt="Ring Latch"
+                    class="centered-img"
+                />
+                <div class="callout-bg">
+                    <h4>Only Quality products</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="pale-bg-colour">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <img
+                    src="../../../media/GFD2.png"
+                    alt="Gate fittings direct 4 trade"
+                    class="centered-img"
+                />
+            </div>
+            <div class="col-6">
+                <h5>Why Us?</h5>
+                <ul class="why-us-list">
+                    <li>
+                        Quality products from the nations most trusted suppliers
+                    </li>
+                    <li>35+ Years of experience in the fencing industry</li>
+                    <li>
+                        300+ Products in stock ready for fast and free shipping
+                    </li>
+                    <li>Expert advice on all products sold</li>
+                    <li>A homegrown local Oxfordshire business</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}
