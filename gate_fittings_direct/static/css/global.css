@@ -16,6 +16,8 @@ body {
     height: calc(100vh - 110px);
 }
 
+/* ------------------------------------ Colours */
+
 .blue-bg {
     background-color: #288fbd;
 }
@@ -27,6 +29,8 @@ body {
 .text-black {
     color: #000000;
 }
+
+/* ------------------------------------ Alignment */
 
 .align-center {
     align-items: center;
@@ -54,6 +58,8 @@ body {
     align-items: center;
 }
 
+/* ------------------------------------ Overlay for all pages */
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -63,6 +69,8 @@ body {
     background: #fff;
     z-index: -1;
 }
+
+/* ------------------------------------ Vat slider */
 
 .switch {
     position: relative;
@@ -140,9 +148,28 @@ input:checked + .vat-slider:before {
     }
 }
 
+/* ------------------------------------ Global Images */
+
 .centered-img {
     display: block;
     max-height: 100%;
     max-width: 100%;
     margin: auto;
+}
+
+/* ------------------------------------ Toasts */
+
+.message-container {
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
 }
