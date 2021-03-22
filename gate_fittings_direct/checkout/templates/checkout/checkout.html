@@ -29,17 +29,17 @@
             <div class="col-7">
                 <div class="detail-container">
                     <div class="detail-title-container">
-                        <h2>Order</h2>
+                        <span>Order</span>
                     </div>
                     <div class="detail-form-container">
                         <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                             {% csrf_token %}
-                            <fieldset class="rounded px-3 mb-5">
-                                <legend class="fieldset-label small text-black px-2 w-auto">Email</legend>
+                            <fieldset class="rounded mb-5">
+                                <legend class="fieldset-label small text-black w-auto">Email</legend>
                                 {{ order_form.email | as_crispy_field }}
                             </fieldset>
-                            <fieldset class="rounded px-3 mb-5">
-                                <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
+                            <fieldset class="rounded mb-5">
+                                <legend class="fieldset-label small text-black w-auto">Details</legend>
                                 {{ order_form.full_name | as_crispy_field }}
                                 {{ order_form.phone_number | as_crispy_field }}
                                 {{ order_form.street_address1 | as_crispy_field }}
@@ -59,8 +59,8 @@
                                     {% endif %}
                                 </div>
                             </fieldset>
-                            <fieldset class="px-3">
-                                <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
+                            <fieldset>
+                                <legend class="fieldset-label small text-black w-auto">Payment</legend>
                                 <!-- A Stripe card element will go here -->
                                 <div class="mb-3" id="card-element"></div>
         
@@ -95,12 +95,12 @@
             <div class="col-5">
                 <div class="order-preview-container">
                     <div class="order-title-container">
-                        <h2>Summary</h2>
+                        <span>Summary</span>
                     </div>
                     <div class="order-items-container">
                         {% for item in bag_items %}
                             <a href="{% url 'product_detail' item.product.id %}" class="text-black">
-                                <div class="row">
+                                <div class="row mb-3">
                                     <div class="col-3">
                                         {% if item.product.image %}
                                             <img class="w-100" src="../../../media/{{ item.product.image }}" alt="{{ product.name }}">
@@ -110,28 +110,28 @@
                                     </div>
                                     <div class="col-7">
                                         <p>{{ item.product.name }}</p>
-                                        <p>{{ item.quantity }}</p>
+                                        <p>Quantity: {{ item.quantity }}</p>
                                     </div>
                                     <div class="col-2 text-right">
-                                        <p>{{ item.product.price }}</p>
+                                        <p>£{{ item.product.price }}</p>
                                     </div>
                                 </div>
                             </a>
-                            <div class="row">
-                                <div class="col-7">
-                                    <p>Subtotal <span class="text-muted">(exc. VAT):</span></p>
-                                    <p>VAT:</p>
-                                    <p>Shipping:</p>
-                                    <p><strong>Order Total </strong><span class="text-muted">(inc. VAT):</span></p>
-                                </div>
-                                <div class="col-5 text-right">
-                                    <p>£{{ total | div:1.2 | floatformat:2}}</p>
-                                    <p>£{{ total | div:1.2 | mul:0.2 | floatformat:2 }}</p>
-                                    <p>£{{ delivery | floatformat:2 }}</p>
-                                    <p><strong>£{{ grand_total | floatformat:2 }}</strong></p>
-                                </div>
-                            </div>
                         {% endfor %}
+                        <div class="row mt-3">
+                            <div class="col-7">
+                                <p class="mb-1">Subtotal <span class="text-muted">(exc. VAT):</span></p>
+                                <p class="mb-1">VAT:</p>
+                                <p class="mb-1">Shipping:</p>
+                                <p class="mt-2"><strong>Order Total </strong><span class="text-muted">(inc. VAT):</span></p>
+                            </div>
+                            <div class="col-5 text-right">
+                                <p class="mb-1">£{{ total | div:1.2 | floatformat:2}}</p>
+                                <p class="mb-1">£{{ total | div:1.2 | mul:0.2 | floatformat:2 }}</p>
+                                <p class="mb-1">£{{ delivery | floatformat:2 }}</p>
+                                <p class="mt-2"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
