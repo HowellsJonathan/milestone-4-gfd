@@ -15,12 +15,11 @@ class OrderForm(forms.ModelForm):
         Add placeholders and classes, remove auto-generated
         labels and set autofocus on first field
         """
-        super().__init__(*args, **kwargs) # Set form up as default before customization
-        placeholders = { # Dict of placeholder instead of labels etc.
+        super().__init__(*args, **kwargs)
+        placeholders = {
             'full_name': 'Full Name',
             'email': 'Email Address',
             'phone_number': 'Phone Number',
-            'country': 'Country',
             'postcode': 'Postal Code',
             'town_or_city': 'Town or City',
             'street_address1': 'Street Address 1',
@@ -28,12 +27,13 @@ class OrderForm(forms.ModelForm):
             'county': 'County',
         }
 
-        self.fields['full_name'].widget.attrs['autofocus'] = True # Cursor start in Full Name field
+        self.fields['full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            if self.fields[field].required:
-                placeholder = f'{placeholders[field]} *'
-            else:
-                placeholder = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholder # Set all placeholder attr to above
+            if field != 'country':
+                if self.fields[field].required:
+                    placeholder = f'{placeholders[field]} *'
+                else:
+                    placeholder = placeholders[field]
+                self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
-            self.fields[field].label = False # Remove Labels
+            self.fields[field].label = False
