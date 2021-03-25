@@ -82,3 +82,45 @@
     margin: 0;
     height: 100%;
 }
+
+/* Checkout Success */
+
+.confirmation-overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #f2f2f2;
+    z-index: -1;
+}
+
+.confirmation-container {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 30px;
+}
+
+.confirmation-container h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.confirmation-container p {
+    color: #696969;
+}
+
+.basic-order-info .col-4 {
+    color: #696969;
+    text-transform: uppercase;
+}
+
+.basic-order-info div {
+    margin-top: 1.5rem;
+}
+
+.confirmation-container .col-8,
+.confirmation-container .col-4 {
+    margin-top: 0.75rem;
+}
