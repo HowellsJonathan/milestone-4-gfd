@@ -185,6 +185,13 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 DEFAULT_FROM_EMAIL = 'info@gfd4trade.co.uk'
 
+""" EMAIL_HOST = 'smtp.ionos.com'
+EMAIL_PORT = 487
+EMAIL_HOST_USER = 'info@gfd4trade.co.uk'
+EMAIL_HOST_PASSWORD = 'TheAdd!ct66'
+EMAIL_USE_TLS = False
+EMAIL_USE_SSL = True """
+
 # User agents
 
 CACHES = {
