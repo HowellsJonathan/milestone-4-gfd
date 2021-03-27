@@ -1,8 +1,11 @@
-<!-- @format -->
+{% extends 'base.html' %} 
+{% load static %} 
 
-{% extends 'base.html' %} {% load static %} {% block extra_css %}
+{% block extra_css %}
 <link rel="stylesheet" href="{% static 'css/index.css' %}" />
-{% endblock %} {% block content %}
+{% endblock %} 
+
+{% block content %}
 
 <section>
     <div class="index-bg-container">
@@ -14,11 +17,11 @@
     </div>
 </section>
 <section class="index-callout-boxes container">
-    <div class="row">
-        <div class="col-4">
+    <div class="flex">
+        <div class="col-4 pl-0">
             <div class="callout-img-cont">
                 <img
-                    src="../../../media/zedlsecurity-cat.jpg"
+                    src="{{ MEDIA_URL }}zedlsecurity-cat.jpg"
                     alt="Zedlock Brand"
                     class="centered-img"
                 />
@@ -28,7 +31,7 @@
         <div class="col-4">
             <div class="callout-img-cont">
                 <img
-                    src="../../../media/fielhinge-cat.jpg"
+                    src="{{ MEDIA_URL }}fencfasteners-cat.jpg"
                     alt="Field Gate Hinge"
                     class="centered-img"
                 />
@@ -37,10 +40,10 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-4 pr-0">
             <div class="callout-img-cont">
                 <img
-                    src="../../../media/ringlatch-cat.jpg"
+                    src="{{ MEDIA_URL }}ringlatch-cat.jpg"
                     alt="Ring Latch"
                     class="centered-img"
                 />
@@ -56,7 +59,7 @@
         <div class="row">
             <div class="col-6">
                 <img
-                    src="../../../media/GFD2.png"
+                    src="{{ MEDIA_URL }}GFD2.png"
                     alt="Gate fittings direct 4 trade"
                     class="centered-img"
                 />
