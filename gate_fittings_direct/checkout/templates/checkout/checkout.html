@@ -108,9 +108,9 @@
                                 <div class="row mb-3">
                                     <div class="col-3">
                                         {% if item.product.image %}
-                                            <img class="w-100" src="../../../media/{{ item.product.image }}" alt="{{ product.name }}">
+                                            <img class="w-100" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ product.name }}">
                                         {% else %}
-                                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                            <img class="w-100" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
                                         {% endif %}
                                     </div>
                                     <div class="col-7">
