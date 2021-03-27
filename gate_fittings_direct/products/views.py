@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.contrib import messages
 from django.db.models import Q
-from .models import Product, sub_category, main_category
 from django_user_agents.utils import get_user_agent
 from django.db.models.functions import Lower
+
+from .models import Product, sub_category, main_category
+from .forms import ProductForm
 
 # Create your views here.
 
@@ -81,3 +83,14 @@ def product_detail(request, product_id):
         return render(request, 'products/mobile_product_detail.html', context)
     elif user_agent.is_pc:
         return render(request, 'products/product_detail.html', context)
+
+
+def add_product(request):
+    """ Add a product to the store """
+    form = ProductForm()
+    template = 'products/add_product.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)

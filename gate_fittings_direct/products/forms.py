@@ -1,5 +1,5 @@
 from django import forms
-from .models import Product, Category
+from .models import Product, main_category, sub_category
 
 
 class ProductForm(forms.ModelForm):
@@ -11,7 +11,7 @@ class ProductForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         main_categories = main_category.objects.all()
-        sub_categories = sub_categories.objects.all()
+        sub_categories = sub_category.objects.all()
         main_friendly_names = [(c.id, c.get_friendly_name()) for c in main_categories]
         sub_friendly_names = [(c.id, c.get_friendly_name()) for c in sub_categories]
 
