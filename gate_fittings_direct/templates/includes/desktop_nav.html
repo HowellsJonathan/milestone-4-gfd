@@ -218,22 +218,32 @@
                 </div>
                 <div class="col-4 pr-0">
                     <ul class="navbar-nav my-0 text-white flex-row justify-content-end">
-                        <li class="nav-item flex pr-4">
+                        <li class="nav-item flex pr-4 dropdown mega-dropdown">
                             <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <div class="text-center">
-                                    <div><i class="fas fa-user fa-lg"></i></div>
+                                    <div><i class="fas fa-user fa-lg text-white"></i></div>
                                 </div>
                             </a>
-                            <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                            <div class="dropdown-menu mega-menu profile-menu border-0 animate__animated animate__fadeOutUp" aria-labelledby="user-options">
                                 {% if request.user.is_authenticated %}
                                     {% if request.user.is_superuser %}
-                                        <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                        <span class="cat-header">
+                                            <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
+                                        </span>   
                                     {% endif %}
-                                    <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-                                    <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                    <span class="cat-header">
+                                        <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
+                                    </span>
+                                    <span class="cat-header">
+                                        <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                                    </span>
                                 {% else %}
-                                    <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-                                    <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                    <span class="cat-header">
+                                        <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
+                                    </span>
+                                    <span class="cat-header">
+                                        <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+                                    </span>
                                 {% endif %}
                             </div>
                         </li>

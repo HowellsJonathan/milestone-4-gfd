@@ -35,15 +35,6 @@ nav .row {
     font-size: 0.8rem;
 }
 
-.dropdown-item:focus {
-    color: #000000;
-    background-color: #288fbd;
-}
-
-.dropdown-item:hover {
-    background-color: #e6e6e6;
-}
-
 .img-fluid {
     display: block;
     max-width: 100%;
@@ -82,13 +73,6 @@ nav .row {
     padding: 0;
 }
 
-@media (min-width: 1200px) {
-    .mega-dropdown .mega-menu {
-        width: 1108px;
-        left: -264px;
-    }
-}
-
 /* Dropdown */
 
 .sub-menu a {
@@ -119,4 +103,24 @@ nav .row {
 .sub-bullet-point {
     color: #ccc;
     font-size: 0.8rem;
+}
+
+@media (min-width: 1200px) {
+    .mega-dropdown .mega-menu {
+        width: 1108px;
+        left: -264px;
+    }
+}
+
+/* Profile Dropdown */
+
+.mega-dropdown .mega-menu.profile-menu {
+    width: auto;
+    left: 0px;
+}
+
+.dropdown-item:hover {
+    color: #fff;
+    background-color: transparent;
+    text-decoration: underline #fff;
 }
