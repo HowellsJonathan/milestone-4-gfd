@@ -97,28 +97,38 @@
         {% block page_header %}
         {% endblock %}
 
-        {% block content %}
+        <div class="main-content">
+            {% block content %}
             {% render_breadcrumbs "django_bootstrap_breadcrumbs/bootstrap4.html" %}
 
-            <div class="row">
-                <div class="col">
-                    <ul class="breadcrumb">
-                        {% for url, label in breadcrumbs %}
-                            <li>
-                                {% ifnotequal forloop.counter breadcrumbs_total %}
-                                    <a href="{{ url }}">{{ label|safe }}</a>
-                                {% else %}
-                                    {{ label|safe }}
-                                {% endifnotequal %}
-                                {% if not forloop.last %}
-                                    <span class="divider">/</span>
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-                    </ul>
+                <div class="row">
+                    <div class="col">
+                        <ul class="breadcrumb">
+                            {% for url, label in breadcrumbs %}
+                                <li>
+                                    {% ifnotequal forloop.counter breadcrumbs_total %}
+                                        <a href="{{ url }}">{{ label|safe }}</a>
+                                    {% else %}
+                                        {{ label|safe }}
+                                    {% endifnotequal %}
+                                    {% if not forloop.last %}
+                                        <span class="divider">/</span>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        {% endblock %}
+            {% endblock %}
+        </div>
+        
+        <div class="footer-content">
+            {% block footer %}
+                <footer class="footer-bg">
+                    {% include 'includes/footer.html' %}
+                </footer>
+            {% endblock %}
+        </div>
 
         {% block postloadjs %}
         {% endblock %}

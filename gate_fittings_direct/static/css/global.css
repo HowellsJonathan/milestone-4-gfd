@@ -58,6 +58,10 @@ body {
     align-items: center;
 }
 
+.main-content {
+    min-height: calc(100vh - 337px);
+}
+
 /* ------------------------------------ Overlay for all pages */
 
 .overlay {
@@ -257,4 +261,38 @@ input:checked + .vat-slider:before {
     background-color: #dc3545;
     border-color: #dc3545;
     border-radius: 0;
+}
+
+/* Footer */
+
+.footer-bg {
+    background-color: #43464b;
+    color: #fff;
+}
+
+footer h6 {
+    font-size: 1.2rem;
+}
+
+footer p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #288fbd;
+}
+
+.bottom-footer {
+    background-color: #303235;
+    color: #fff;
 }
