@@ -60,6 +60,7 @@ body {
 
 .main-content {
     min-height: calc(100vh - 337px);
+    margin-top: 6rem;
 }
 
 /* ------------------------------------ Overlay for all pages */

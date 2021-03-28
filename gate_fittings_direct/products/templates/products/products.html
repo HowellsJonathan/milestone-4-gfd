@@ -10,7 +10,7 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-2">
+            <div class="col-6">
                 <div class="category-nav">
                     <h1>
                         {% if search_term %}
@@ -26,75 +26,52 @@
                     </p>
                 </div>
             </div>
-            <div class="product-container col-10">
-                <div class="row mt-1 mb-2">
+            <div class="col-6 flex justify-content-end">
+                <div class="orderby-select-wrapper w-25 mb-3">
+                    <select id="orderby-selector" class="custom-select custom-select-sm">
+                        <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort By...</option>
+                        <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name: (A-Z)</option>
+                        <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name: (Z-A)</option>
+                        <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price: (Low to High)</option>
+                        <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price: (High to Low)</option>
+                        <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating: (Low to High)</option>
+                        <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating: (High To Low)</option>     
+                    </select>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <div class="orderby-select-wrapper w-25 mb-3">
-                            <select id="orderby-selector" class="custom-select custom-select-sm">
-                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort By...</option>
-                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name: (A-Z)</option>
-                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name: (Z-A)</option>
-                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price: (Low to High)</option>
-                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price: (High to Low)</option>
-                                <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating: (Low to High)</option>
-                                <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating: (High To Low)</option>     
-                            </select>
-                        </div>
-                    </div>
-                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="product-container col-12">
                 <div class="row">
                     {% for product in products %}
-                        <div class="col-lg-6 col-xl-4 mb-3 pr-0">
-                            <div class="card h-100 card-border py-2 px-2">
-                                <div class="row">
-                                    <div class="col-6">
-                                        {% if product.image %}
-                                            <a href="{% url 'product_detail' product.id %}">
+                        <div class="col-lg-4 col-xl-3 mb-3 pr-0">
+                            <div class="card h-100">
+                                <a href="{% url 'product_detail' product.id %}">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            {% if product.image %}
                                                 <div class="product-img-container">
                                                     <img src="{{ MEDIA_URL }}{{ product.image }}" class="centered-img" alt="{{ product.name }}">
                                                 </div>
-                                            </a>
-                                        {% else %}
-                                            <a href="{% url 'product_detail' product.id %}">
+                                            {% else %}
                                                 <div class="product-img-container">
                                                     <img src="{{ MEDIA_URL }}no_image.png" class="centered-img" alt="{{ product.name }}">
                                                 </div>
-                                            </a>
-                                        {% endif %}
-                                    </div>
-                                    <div class="col-6 pl-0">
-                                        <div class="card-body px-0 py-0">
-                                            <a href="{% url 'product_detail' product.id %}">
-                                                <p class="mb-0 text-capitalize">{{ product.name }}</p>
-                                            </a>
+                                            {% endif %}
                                         </div>
-                                        <div class="card-footer bg-white py-0 px-0 border-0 text-left">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <p class="text-muted">{{ product.sku }}</p>
-                                                    {% if product.rating %}
-                                                        <small class="text-muted">{{ product.rating }}</small>
-                                                    {% else %}
-                                                        <small class="text-muted">No Rating</small>
-                                                    {% endif %}
-                                                    <p class="excVat lead mb-0 text-left font-weight-bold">
-                                                        £{{ product.price|div:1.2|floatformat:2 }}
-                                                    </p>
-                                                    <p class="incVat lead mb-0 text-left font-weight-bold">
-                                                        £{{ product.price }}
-                                                    </p>
-                                                </div>
+                                        <div class="col-12 mt-2">
+                                            <div class="card-body px-0 py-0">
+                                                <p class="mb-3 text-capitalize">{{ product.name }}</p>
+                                                <p class="excVat lead mb-0 text-left font-weight-bold">
+                                                    £{{ product.price|div:1.2|floatformat:2 }}
+                                                </p>
+                                                <p class="incVat lead mb-0 text-left font-weight-bold">
+                                                    £{{ product.price }}
+                                                </p>
                                             </div>
-                                        </div>        
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col">
-                                        <a href="{% url 'product_detail' product.id %}" class="product-btn mt-3">View Item<i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     {% endfor %}

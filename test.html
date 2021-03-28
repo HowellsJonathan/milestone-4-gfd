@@ -1,0 +1,86 @@
+<div class="col-lg-6 col-xl-4 mb-3 pr-0">
+    <div class="card h-100">
+        <a href="{% url 'product_detail' product.id %}">
+            <div class="row">
+                <div class="col-12">
+                    {% if product.image %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <div class="product-img-container">
+                                <img src="{{ MEDIA_URL }}{{ product.image }}" class="centered-img" alt="{{ product.name }}">
+                            </div>
+                        </a>
+                    {% else %}
+                        <a href="{% url 'product_detail' product.id %}">
+                            <div class="product-img-container">
+                                <img src="{{ MEDIA_URL }}no_image.png" class="centered-img" alt="{{ product.name }}">
+                            </div>
+                        </a>
+                    {% endif %}
+                </div>
+                <div class="col-12 pl-0">
+                    <div class="card-body px-0 py-0">
+                        <p class="mb-3 text-capitalize">{{ product.name }}</p>
+                        <p class="excVat lead mb-0 text-left font-weight-bold">
+                            £{{ product.price|div:1.2|floatformat:2 }}
+                        </p>
+                        <p class="incVat lead mb-0 text-left font-weight-bold">
+                            £{{ product.price }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="col-lg-6 col-xl-4 mb-3 pr-0">
+    <div class="card h-100 card-border py-2 px-2">
+        <div class="row">
+            <div class="col-6">
+                {% if product.image %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <div class="product-img-container">
+                            <img src="{{ MEDIA_URL }}{{ product.image }}" class="centered-img" alt="{{ product.name }}">
+                        </div>
+                    </a>
+                {% else %}
+                    <a href="{% url 'product_detail' product.id %}">
+                        <div class="product-img-container">
+                            <img src="{{ MEDIA_URL }}no_image.png" class="centered-img" alt="{{ product.name }}">
+                        </div>
+                    </a>
+                {% endif %}
+            </div>
+            <div class="col-6 pl-0">
+                <div class="card-body px-0 py-0">
+                    <a href="{% url 'product_detail' product.id %}">
+                        <p class="mb-0 text-capitalize">{{ product.name }}</p>
+                    </a>
+                </div>
+                <div class="card-footer bg-white py-0 px-0 border-0 text-left">
+                    <div class="row">
+                        <div class="col">
+                            <p class="text-muted">{{ product.sku }}</p>
+                            {% if product.rating %}
+                                <small class="text-muted">{{ product.rating }}</small>
+                            {% else %}
+                                <small class="text-muted">No Rating</small>
+                            {% endif %}
+                            <p class="excVat lead mb-0 text-left font-weight-bold">
+                                £{{ product.price|div:1.2|floatformat:2 }}
+                            </p>
+                            <p class="incVat lead mb-0 text-left font-weight-bold">
+                                £{{ product.price }}
+                            </p>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <a href="{% url 'product_detail' product.id %}" class="product-btn mt-3">View Item<i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
