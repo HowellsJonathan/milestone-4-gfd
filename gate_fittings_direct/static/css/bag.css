@@ -1,24 +1,82 @@
 /** @format */
 
-.bag-item-cont,
-.item-img-cont {
-    height: 230px;
+.bag-item-cont {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 0.5rem;
 }
 
-.table {
-    border-collapse: separate;
-    border-spacing: 0px 1rem;
+.bag-item-cont h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0;
 }
 
-.bag-item-cont .left-border {
-    border-left: 1px solid #ccc;
+.bag-total {
+    font-size: 1rem;
 }
 
-.bag-item-cont .right-border {
-    border-right: 1px solid #ccc;
+.checkout-btn {
+    width: 100%;
+    height: 45px;
+    background-color: #288fdb;
+    color: #fff;
+    border-radius: 0.1rem;
 }
 
-.bag-item-cont .top-bottom-border {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+.bag-item-details p {
+    margin-bottom: 0.2rem;
+}
+
+.bag-total span:nth-child(2) {
+    float: right;
+}
+
+.bag-subtotal {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.bag-subtotal span:nth-child(2) {
+    padding-left: 1rem;
+}
+
+.remove-item {
+    position: absolute;
+    top: -7px;
+    right: 15px;
+    font-size: 1.5rem;
+}
+
+.update-q-link {
+    position: absolute;
+    font-size: 1.5rem;
+    bottom: 0px;
+    left: 180px;
+}
+
+.update-q-form {
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.bag-item-cont .item-cont {
+    height: 180px;
+}
+
+.qty_input {
+    text-align: center;
+    border: 1px solid rgb(40, 143, 189, 0.5);
+}
+
+.qty-button {
+    background-color: rgb(40, 143, 189, 0.5);
+    color: #000;
+    border: none;
+    width: 38px;
+}
+
+.qty-button:disabled {
+    background-color: rgb(40, 143, 189, 0.2);
 }

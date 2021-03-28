@@ -26,6 +26,10 @@ body {
     background-color: #373737;
 }
 
+.light-grey-bg {
+    background-color: #f2f2f2 !important;
+}
+
 .text-black {
     color: #000000;
 }
@@ -236,7 +240,7 @@ input:checked + .vat-slider:before {
     color: #17a2b8; /* text-info */
 }
 
-/* Product Form */
+/* ------------------------------------ Product Form */
 
 .btn-file {
     position: relative;
@@ -264,7 +268,15 @@ input:checked + .vat-slider:before {
     border-radius: 0;
 }
 
-/* Footer */
+/* ------------------------------------ Inputs */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ------------------------------------ Footer */
 
 .footer-bg {
     background-color: #43464b;
