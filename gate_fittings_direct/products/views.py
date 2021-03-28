@@ -5,6 +5,8 @@ from django.db.models import Q
 from django_user_agents.utils import get_user_agent
 from django.db.models.functions import Lower
 
+from django.core.paginator import Paginator
+
 from .models import Product, sub_category, main_category
 from .forms import ProductForm
 
@@ -26,22 +28,34 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
+                paginator = Paginator(products, 12)
+                page_number = request.GET.get('page')
+                page_obj = paginator.get_page(page_number)
 
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
+            paginator = Paginator(products, 12)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
 
         if 'MainCategory' in request.GET:
             category = request.GET['MainCategory']
             products = products.filter(main_category__name=category)
             category = main_category.objects.filter(name=category)
+            paginator = Paginator(products, 12)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
 
         if 'SubCategory' in request.GET:
             category = request.GET['SubCategory']
             products = products.filter(sub_category__name=category)
             category = sub_category.objects.filter(name=category)
+            paginator = Paginator(products, 12)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -51,11 +65,14 @@ def all_products(request):
 
             queries = Q(name__icontains=query) | Q(description__icontains=query) | Q(sku__icontains=query)
             products = products.filter(queries)
+            paginator = Paginator(products, 12)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
 
     current_sorting = f'{sort}_{direction}'
 
     context = {
-        'products': products,
+        'products': page_obj,
         'search_term': query,
         'current_category': category,
         'current_sorting': current_sorting,
