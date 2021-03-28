@@ -16,31 +16,26 @@
 {% endblock %}
 
 {% block content %}
-    <div class="overlay"></div>
-    <div class="container">
+    <div class="overlay light-grey-bg"></div>
+    <div class="container mb-2">
         <div class="row">
-            <div class="col">
-                <hr>
-                <h2 class="logo-font mb-4">Checkout</h2>
-                <hr>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-7">
-                <div class="detail-container">
-                    <div class="detail-title-container">
-                        <span>Post To</span>
+            <div class="col-12 col-md-7 px-1">
+                <div class="checkout-item-cont">
+                    <h2 class="text-uppercase">Checkout</h2>
+                </div>
+                <div class="checkout-item-cont">
+                    <div class="checkout-title-cont">
+                        <span>Delivery Address</span>
                     </div>
+                    <hr>
                     <div class="detail-form-container">
                         <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                             {% csrf_token %}
-                            <fieldset class="rounded mb-5">
-                                <legend class="fieldset-label small text-black w-auto">Details</legend>
+                            <fieldset class="mb-5">
                                 {{ order_form.full_name | as_crispy_field }}
                                 {{ order_form.email | as_crispy_field }}
                             </fieldset>
-                            <fieldset class="rounded mb-5">
-                                <legend class="fieldset-label small text-black w-auto">Shipping</legend>
+                            <fieldset class="mb-5">
                                 {{ order_form.phone_number | as_crispy_field }}
                                 {{ order_form.country | as_crispy_field }}
                                 {{ order_form.street_address1 | as_crispy_field }}
@@ -60,7 +55,7 @@
                                     {% endif %}
                                 </div>
                             </fieldset>
-                            <fieldset class="px-3">
+                            <fieldset>
                                 <legend class="fieldset-label small text-black px-2 w-auto">Payment</legend>
                                 <!-- A Stripe card element will go here -->
                                 <div class="mb-3" id="card-element"></div>
@@ -71,73 +66,72 @@
                             </fieldset>
 
                             <div class="submit-button text-right mt-5 mb-2">                    
-                                <a href="{% url 'view_bag' %}" class="btn btn-outline-black rounded-0">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="font-weight-bold">Adjust Bag</span>
-                                </a>
-                                <button id="submit-button" class="btn btn-black rounded-0">
-                                    <span class="font-weight-bold">Complete Order</span>
-                                    <span class="icon">
-                                        <i class="fas fa-lock"></i>
-                                    </span>
+                                <button id="submit-button" class="button hvr-shutter-in-horizontal text-uppercase">
+                                    place order
                                 </button>
-                                <!-- Set up a container element for the button -->
-                                <div id="paypal-button-container"></div>
-
-                                <p class="small text-danger my-0">
-                                    <span class="icon">
-                                        <i class="fas fa-exclamation-circle"></i>
-                                    </span>
-                                    <span>Your card will be charged <strong>£{{ grand_total | floatformat:2 }}</strong></span>
-                                </p>
                             </div>
                         </form>
                     </div>
                 </div>
             </div>
-            <div class="col-5">
-                <div class="order-preview-container">
-                    <div class="order-title-container">
-                        <span>Summary</span>
-                    </div>
-                    <div class="order-items-container">
-                        {% for item in bag_items %}
-                            <a href="{% url 'product_detail' item.product.id %}" class="text-black">
-                                <div class="row mb-3">
-                                    <div class="col-3">
-                                        {% if item.product.image %}
-                                            <img class="w-100" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ product.name }}">
-                                        {% else %}
-                                            <img class="w-100" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
-                                        {% endif %}
-                                    </div>
-                                    <div class="col-7">
-                                        <p>{{ item.product.name }}</p>
-                                        <p>Quantity: {{ item.quantity }}</p>
-                                    </div>
-                                    <div class="col-2 text-right">
-                                        <p>£{{ item.product.price }}</p>
-                                    </div>
-                                </div>
-                            </a>
-                        {% endfor %}
-                        <div class="row mt-3">
-                            <div class="col-7">
-                                <p class="mb-1">Subtotal <span class="text-muted">(exc. VAT):</span></p>
-                                <p class="mb-1">VAT:</p>
-                                <p class="mb-1">Shipping:</p>
-                                <p class="mt-2"><strong>Order Total </strong><span class="text-muted">(inc. VAT):</span></p>
-                            </div>
-                            <div class="col-5 text-right">
-                                <p class="mb-1">£{{ total | div:1.2 | floatformat:2}}</p>
-                                <p class="mb-1">£{{ total | div:1.2 | mul:0.2 | floatformat:2 }}</p>
-                                <p class="mb-1">£{{ delivery | floatformat:2 }}</p>
-                                <p class="mt-2"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
-                            </div>
+            <div class="col-12 col-md-5 px-1">
+                <div class="checkout-item-cont custom-sticky-top">
+                    <div class="row">
+                        <div class="col-6">
+                            <h2 class="text-uppercase">
+                                Summary
+                            </h2>
+                        </div>
+                        <div class="col-6 float-right">
+                            <a href="{% url 'view_bag' %}">Edit</a>
                         </div>
                     </div>
+                    <hr>
+                    <div class="checkout-scroll-cont">
+                        <ul class="many-item-cont list-unstyled">
+                            {% for item in bag_items %}
+                            <li>
+                                <div class="row item-cont">
+                                    <div class="col-5 img-container flex">
+                                        {% if item.product.image %}
+                                            <img class="img-fluid" src="{{ MEDIA_URL }}{{ item.product.image }}" alt="{{ product.name }}">
+                                        {% else %}
+                                            <img class="img-fluid" src="{{ MEDIA_URL }}no_image.png" alt="{{ product.name }}">
+                                        {% endif %}
+                                    </div>
+                                    <div class="col-7 checkout-item-details">
+                                        <p><strong>£{{ item.product.price }}</strong></p>
+                                        <p>{{ item.product.name }}</p>
+                                        <p>Qty: {{ item.quantity }}</p>
+                                    </div>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <hr>
+                    <p class="checkout-total mb-2">
+                        <span>
+                            <strong>Sub-total:</strong>
+                            <small class="text-muted">(exc.Vat)</small>
+                        </span>
+                        <span>£{{ total | div:1.2 | floatformat:2}}</span>
+                    </p>
+                    <p class="checkout-total mb-2">
+                        <span><strong>VAT:</strong></span>
+                        <span>£{{ total | div:1.2 | mul:0.2 | floatformat:2 }}</span>
+                    </p>
+                    <p class="checkout-total">
+                        <span><strong>Delivery:</strong></span>
+                        <span>£{{ delivery|floatformat:2 }}</span>
+                    </p>
+                    <p class="checkout-total grand-total mb-0">
+                        <span>
+                            <strong>Total To Pay:</strong>
+                            <small class="text-muted">(inc.VAT)</small>
+                        </span>
+                        <span>£{{ grand_total | floatformat:2 }}</span>
+                    </p>
                 </div>
             </div>
         </div>

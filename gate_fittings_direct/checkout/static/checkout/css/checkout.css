@@ -1,28 +1,71 @@
 /** @format */
 
-.detail-container,
-.order-preview-container {
-    width: 100%;
-    border-radius: 0.1rem;
-    border: 1px solid #43464b;
-    border-bottom: 3px solid #288fbd;
+.main-content {
+    margin-top: 0;
 }
 
-.detail-title-container,
-.order-title-container {
-    width: 100%;
-    padding: 0.8rem 1rem;
-    height: 60px;
-    background-color: #43464b;
-    color: #fff;
+/* Checkout Delivery */
+
+.checkout-item-cont {
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 0.5rem;
+}
+
+.checkout-item-cont h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* Checkout details */
+
+.img-container,
+.item-cont {
+    height: 110px;
+}
+
+.item-cont {
+    margin-bottom: 2rem;
+}
+
+.checkout-scroll-cont {
+    height: 16rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.checkout-scroll-cont > .many-item-cont {
+    overflow-y: auto;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.checkout-item-details p {
+    margin-bottom: 0.2rem;
+}
+
+.checkout-total span:nth-child(2) {
+    float: right;
+}
+
+.grand-total {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.checkout-title-cont span {
     font-size: 1.2rem;
 }
 
-.detail-form-container,
-.order-items-container {
-    font-family: "Montserrat", sans-serif;
-    padding: 0.8rem 1rem;
-}
+/* Stripe Checkout */
 
 .StripeElement,
 .stripe-style-input {
@@ -53,23 +96,43 @@
 
 .fieldset-label {
     position: relative;
-    right: 0.5rem;
+}
+
+fieldset label {
+    color: #696969;
 }
 
 #payment-form .form-control,
 #card-element {
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid rgb(105, 105, 105);
 }
 
 select,
 select option {
-    color: #000;
+    color: rgb(105, 105, 105);
 }
 
 select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
+}
+
+#submit-button {
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.1rem;
+}
+
+.hvr-shutter-in-horizontal:before {
+    background: #000;
+}
+
+.hvr-shutter-in-horizontal:hover {
+    background-color: #288fdb;
 }
 
 /* Loading */

@@ -309,3 +309,12 @@ footer ul li a:hover {
     background-color: #303235;
     color: #fff;
 }
+
+/* Other */
+
+.custom-sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 118px;
+    z-index: 1020;
+}
