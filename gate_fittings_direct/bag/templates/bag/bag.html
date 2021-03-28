@@ -66,9 +66,10 @@
                                     <a class="remove-item" id="remove_{{ item.item_id }}"><i class="fas fa-times"></i></a>
                                 </div>
                             </div>
+                            <hr>
                         {% endfor %}
                     </div>
-                    <div class="bag-item-cont text-right">
+                    <div class="bag-item-cont text-right mb-2">
                         <h3 class="bag-subtotal">
                             <span><strong>Sub-total:</strong></span>
                             <span><strong>£{{ total|floatformat:2 }}</strong></span>
@@ -76,21 +77,24 @@
                     </div>
                 </div>
                 <div class="col-12 col-md-4 px-1">
-                    <div class="bag-item-cont fixed">
-                        <h2 class="text-uppercase mb-3">total</h2>
-                        <p class="bag-total">
-                            <span><strong>Sub-total:</strong></span>
-                            <span>£{{ total|floatformat:2 }}</span>
-                        </p>
-                        <p class="bag-total">
-                            <span><strong>Delivery:</strong></span>
-                            <span>£{{ delivery|floatformat:2 }}</span>
-                        </p>
-                        <a href="{% url 'checkout' %}" class="checkout-btn btn text-uppercase 
-                                                              flex justify-content-center 
-                                                              align-center">
-                            Checkout
-                        </a>
+                    <div class="custom-sticky-top">
+                        <div class="bag-item-cont">
+                            <h2 class="text-uppercase mb-3">total</h2>
+                            <hr>
+                            <p class="bag-total">
+                                <span><strong>Sub-total:</strong></span>
+                                <span>£{{ total|floatformat:2 }}</span>
+                            </p>
+                            <p class="bag-total">
+                                <span><strong>Delivery:</strong></span>
+                                <span>£{{ delivery|floatformat:2 }}</span>
+                            </p>
+                            <a href="{% url 'checkout' %}" class="checkout-btn btn text-uppercase 
+                                                                  flex justify-content-center 
+                                                                  align-center hvr-bounce-to-right">
+                                Checkout
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,5 +1,11 @@
 /** @format */
 
+.main-content {
+    margin-top: 0;
+}
+
+/* Bag Item Container  */
+
 .bag-item-cont {
     background-color: #fff;
     padding: 2rem;
@@ -12,6 +18,8 @@
     margin-bottom: 0;
 }
 
+/* Checkout Box */
+
 .bag-total {
     font-size: 1rem;
 }
@@ -22,7 +30,26 @@
     background-color: #288fdb;
     color: #fff;
     border-radius: 0.1rem;
+    border: none;
 }
+
+.custom-sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 118px;
+    z-index: 1020;
+}
+
+.checkout-btn:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hvr-bounce-to-right:before {
+    background: #43464b;
+}
+
+/* Bag Items */
 
 .bag-item-details p {
     margin-bottom: 0.2rem;
