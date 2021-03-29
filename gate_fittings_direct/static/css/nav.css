@@ -122,7 +122,7 @@ nav .row {
 /* Profile Dropdown */
 
 .mega-dropdown .mega-menu.profile-menu {
-    width: auto;
+    width: 300px;
     left: 0px;
 }
 
