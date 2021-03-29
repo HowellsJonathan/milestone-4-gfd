@@ -7,17 +7,21 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
-    margin-top: -6rem;
+    margin-top: -2rem;
 }
 
 .index-title-container {
     color: #fff;
-    padding-top: 60px;
+    padding-top: 90px;
     text-align: center;
 }
 
 .callout-small {
     flex-direction: column;
+}
+
+.callout-bg h4 {
+    font-size: 1rem;
 }
 
 .callout-img-cont {
@@ -51,7 +55,7 @@
     bottom: 0;
     left: 0;
     background-color: rgb(40 143 189 / 70%);
-    height: 60px;
+    height: 45px;
     width: 100%;
     padding: 15px;
     color: #fff;
@@ -177,13 +181,29 @@
     margin-bottom: 0;
 }
 
+@media (min-width: 760px) {
+    .callout-small {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 900px) {
+    .index-bg-container {
+        margin-top: -6rem;
+    }
+}
+
 @media (min-width: 1200px) {
     .index-title-container {
         padding-top: 150px;
     }
 
-    .callout-small {
-        flex-direction: row;
+    .callout-bg h4 {
+        font-size: 1.5rem;
+    }
+
+    .callout-bg {
+        height: 60px;
     }
 
     /* Why us media queries */
