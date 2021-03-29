@@ -108,3 +108,16 @@ body {
 .dropdown-menu i {
     font-size: 0.7rem;
 }
+
+@media (max-width: 759px) {
+    .header-logo img {
+        max-height: 65px;
+    }
+}
+
+@media (min-width: 760px) {
+    .header-logo img {
+        height: 110px;
+        width: 100%;
+    }
+}

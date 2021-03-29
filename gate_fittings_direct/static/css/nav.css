@@ -112,6 +112,13 @@ nav .row {
     }
 }
 
+@media (min-width: 992px) {
+    .mega-dropdown .mega-menu {
+        width: 945px;
+        left: -217px;
+    }
+}
+
 /* Profile Dropdown */
 
 .mega-dropdown .mega-menu.profile-menu {
