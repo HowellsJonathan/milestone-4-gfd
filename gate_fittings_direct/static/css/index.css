@@ -12,8 +12,12 @@
 
 .index-title-container {
     color: #fff;
-    padding-top: 150px;
+    padding-top: 60px;
     text-align: center;
+}
+
+.callout-small {
+    flex-direction: column;
 }
 
 .callout-img-cont {
@@ -62,15 +66,16 @@
 
 .about-sect-index {
     background-color: #f2f2f2;
-    padding: 175px 0;
+    padding: 175px 0 150px 0;
 }
 
 .why-us-cont {
-    padding-left: 50px;
+    padding-left: 15px;
+    padding-top: 2rem;
 }
 
 .why-us-cont h5 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
 }
 
@@ -80,24 +85,24 @@
 
 .why-us-list li {
     list-style-type: square;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: #288fbd;
 }
 
 .why-us-list li span {
     color: #000;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 /* Who We Work With Section */
 
 .who-we-work-with {
-    padding: 80px 0;
+    padding: 80px 15px;
     background-color: #288fbd;
 }
 
 .who-we-work-with h5 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-bottom: 3rem;
 }
 
@@ -116,7 +121,7 @@
 
 .testimonials {
     background-color: #f2f2f2;
-    padding: 175px;
+    padding: 80px 15px;
 }
 
 .testimonials h5 {
@@ -143,7 +148,7 @@
 
 .testimonial-container {
     background-color: #fff;
-    padding: 3rem;
+    padding: 2rem;
     color: #000;
     height: 100%;
     box-shadow: 2px 2px 5px rgb(0 0 0 / 30%);
@@ -168,6 +173,60 @@
 }
 
 .testimonial-text {
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-bottom: 0;
+}
+
+@media (min-width: 1200px) {
+    .index-title-container {
+        padding-top: 150px;
+    }
+
+    .callout-small {
+        flex-direction: row;
+    }
+
+    /* Why us media queries */
+
+    .about-sect-index {
+        padding: 175px 0;
+    }
+
+    /* Why us media queries */
+
+    .why-us-cont h5 {
+        font-size: 2rem;
+    }
+
+    .why-us-cont {
+        padding-left: 50px;
+    }
+
+    .why-us-list li {
+        font-size: 1.5rem;
+    }
+
+    .why-us-list li span {
+        font-size: 1.1rem;
+    }
+
+    /* Who we work with media queries */
+
+    .who-we-work-with h5 {
+        font-size: 2rem;
+    }
+
+    /* Testimonials media queries */
+
+    .testimonials {
+        padding: 175px;
+    }
+
+    .testimonial-container {
+        padding: 3rem;
+    }
+
+    .testimonial-text {
+        font-size: 1.5rem;
+    }
 }
