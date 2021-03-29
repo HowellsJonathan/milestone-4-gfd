@@ -181,6 +181,33 @@
     margin-bottom: 0;
 }
 
+/* Contact Page */
+
+.contact-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    border-radius: 0.1rem;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+
+/* Media Queries */
+
+@media (min-width: 585px) {
+    .contact-form {
+        width: 550px;
+    }
+}
+
 @media (min-width: 760px) {
     .callout-small {
         flex-direction: row;
