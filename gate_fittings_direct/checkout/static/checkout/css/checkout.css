@@ -171,3 +171,9 @@ select option[value=""] {
 .checkout-item-cont .col-4 {
     margin-top: 0.75rem;
 }
+
+@media (max-width: 500px) {
+    .item-details {
+        font-size: 0.8rem;
+    }
+}

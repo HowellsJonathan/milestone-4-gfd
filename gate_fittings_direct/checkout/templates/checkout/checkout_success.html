@@ -18,7 +18,7 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-7 px-1">
+            <div class="col-12 col-md-7 px-1">
                 <div class="checkout-item-cont">
                     <h2 class="text-uppercase">Thank you for your order</h2>
                     <hr>
@@ -27,7 +27,7 @@
                         <div class="col-4">Order Total:</div>
                         <div class="col-8">£{{ order.grand_total }}</div>
                         <div class="col-4">Order Reference:</div>
-                        <div class="col-8">{{ order.order_number }}</div>
+                        <div class="col-8 text-break">{{ order.order_number }}</div>
                         <div class="col-4">Date Ordered:</div>
                         <div class="col-8">{{ order.date }}</div>
                     </div>
@@ -35,7 +35,7 @@
                 <div class="checkout-item-cont">
                     <h2>Order Details:</h2>
                     <hr>
-                    <div class="row">
+                    <div class="row item-details">
                         {% for item in order.lineitems.all %}
                             <div class="col-4">
                                 <p class="mb-0 font-weight-bold">
@@ -52,7 +52,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-5 px-1">
+            <div class="col-12 col-md-5 px-1">
                 {% if from_profile %}
                     <a href="{% url 'profile' %}" class="btn btn-black rounded-0 my-2">
                         <span class="icon mr-2">
@@ -136,24 +136,24 @@
                             <h2>Billing Info:</h2>
                             <hr>
                         </div>
-                        <div class="col-4">
-                            <p class="mb-0 text-black font-weight-bold">Order Total</p>
+                        <div class="col-8 col-md-4">
+                            <p class="mb-0 text-black font-weight-bold">Order Total:</p>
                         </div>
-                        <div class="col-8">
+                        <div class="col-4 col-md-8">
                             <p class="mb-0">£{{ order.order_total }}</p>
                         </div>
     
-                        <div class="col-4">
-                            <p class="mb-0 text-black font-weight-bold">Delivery</p>
+                        <div class="col-8 col-md-4">
+                            <p class="mb-0 text-black font-weight-bold">Delivery:</p>
                         </div>
-                        <div class="col-8">
+                        <div class="col-4 col-md-8">
                             <p class="mb-0">£{{ order.delivery_cost }}</p>
                         </div>
     
-                        <div class="col-4">
-                            <p class="mb-0 text-black font-weight-bold">Grand Total</p>
+                        <div class="col-8 col-md-4">
+                            <p class="mb-0 text-black font-weight-bold">Grand Total:</p>
                         </div>
-                        <div class="col-8">
+                        <div class="col-4 col-md-8">
                             <p class="mb-0">£{{ order.grand_total }}</p>
                         </div>
                     </div>
