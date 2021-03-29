@@ -192,10 +192,19 @@ input:checked + .vat-slider:before {
     align-items: center;
 }
 
-.signup {
+.allauth-form-inner-content form .form-group {
+    width: 100%;
+}
+
+.form-check {
+    padding-left: 0;
+}
+
+.allauth-form {
     border-radius: 0.1rem;
     box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
     padding: 2rem;
+    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -363,7 +372,7 @@ footer ul li a:hover {
 /* ------------------------------------ Media Queries */
 
 @media (min-width: 585px) {
-    .signup {
+    .allauth-form {
         width: 550px;
     }
 }
