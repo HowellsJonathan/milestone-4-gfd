@@ -100,3 +100,33 @@
 .qty-button:disabled {
     background-color: rgb(40, 143, 189, 0.2);
 }
+
+/* Nothing In Bag */
+
+.empty-sect i {
+    font-size: 2rem;
+}
+
+.empty-home-btn {
+    width: 100px;
+    padding: 0.25rem 1rem;
+    color: #fff;
+    background-color: #288fdb;
+    border-radius: 0.3rem;
+}
+
+.empty-home-btn:hover {
+    text-decoration: none;
+}
+
+.empty-home-btn.hvr-shutter-out-horizontal:before {
+    text-decoration: none;
+    background-color: #43464b;
+    border-radius: 0.3rem;
+}
+
+@media (min-width: 992px) {
+    .empty-sect i {
+        margin-top: 100px;
+    }
+}
