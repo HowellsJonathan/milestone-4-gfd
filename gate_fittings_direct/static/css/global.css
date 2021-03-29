@@ -65,7 +65,7 @@ body {
 
 .main-content {
     min-height: calc(100vh - 337px);
-    margin-top: 6rem;
+    margin-top: 2rem;
 }
 
 /* ------------------------------------ Overlay for all pages */
@@ -318,4 +318,10 @@ footer ul li a:hover {
     position: sticky;
     top: 118px;
     z-index: 1020;
+}
+
+@media (min-width: 900px) {
+    .main-content {
+        margin-top: 6rem;
+    }
 }

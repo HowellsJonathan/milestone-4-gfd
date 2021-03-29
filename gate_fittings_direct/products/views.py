@@ -78,12 +78,7 @@ def all_products(request):
         'current_sorting': current_sorting,
     }
 
-    user_agent = get_user_agent(request)
-
-    if user_agent.is_mobile or user_agent.is_tablet:
-        return render(request, 'products/mobile_products.html', context)
-    elif user_agent.is_pc:
-        return render(request, 'products/products.html', context)
+    return render(request, 'products/products.html', context)
 
 
 def product_detail(request, product_id):
@@ -95,12 +90,7 @@ def product_detail(request, product_id):
         'product': product,
     }
 
-    user_agent = get_user_agent(request)
-
-    if user_agent.is_mobile or user_agent.is_tablet:
-        return render(request, 'products/mobile_product_detail.html', context)
-    elif user_agent.is_pc:
-        return render(request, 'products/product_detail.html', context)
+    return render(request, 'products/product_detail.html', context)
 
 
 @login_required

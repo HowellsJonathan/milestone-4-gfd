@@ -27,7 +27,7 @@
                 </div>
             </div>
             <div class="col-6 flex justify-content-end">
-                <div class="orderby-select-wrapper w-25 mb-3">
+                <div class="orderby-select-wrapper w-50 w-lg-25 mb-3">
                     <select id="orderby-selector" class="custom-select custom-select-sm">
                         <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort By...</option>
                         <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name: (A-Z)</option>
@@ -44,7 +44,7 @@
             <div class="product-container col-12">
                 <div class="row">
                     {% for product in products %}
-                        <div class="col-lg-4 col-xl-3 mb-3 pr-0">
+                        <div class="col-6 col-md-4 col-xl-3 mb-3 pr-0">
                             <div class="card h-100">
                                 <a href="{% url 'product_detail' product.id %}">
                                     <div class="row">
