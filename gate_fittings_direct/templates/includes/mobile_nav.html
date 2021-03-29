@@ -7,17 +7,6 @@
         </div>
         <div class="col-8 flex align-center justify-content-end">
             <ul class="navbar-nav flex-row justify-content-end align-center">
-                <li class="nav-item">
-                    {% if request.user.is_authenticated %}
-                        <a href="#">
-                            <div><i class="fas fa-user pr-2 text-white"></i></div>
-                        </a>
-                    {% else %}
-                        <a href="#">
-                            <div><i class="fas fa-user pr-2 text-white"></i></div>
-                        </a>
-                    {% endif %}
-                </li>
                 <li class="nav-item mx-3">
                     <a href="{% url 'view_bag' %}" class="{% if grand_total %}text-custom font-weight-bold{% else %}
                         text-white{% endif %} nav-link pr-0">
@@ -50,6 +39,33 @@
                                 </label>
                                 <small class="text-white exc-vat-text">Exc. Vat</small>
                             </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="dropdown-toggle nav-link text-white" id="profileDropdown"
+                               role="button" data-toggle="dropdown" aira-haspopup="true" aria-expanded="false">
+                                Profile
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% if request.user.is_authenticated %}
+                                    <li class="flex align-center">
+                                        <a href="{% url 'profile' %}" class="dropdown-item text-white">My Profile</a>
+                                    </li>
+                                    {% if request.user.is_superuser %}
+                                        <li class="flex align-center">
+                                            <a href="{% url 'add_product' %}" class="dropdown-item text-white">Product Management</a>
+                                        </li>
+                                    {% endif %}
+                                    <li class="flex align-center">
+                                        <a href="{% url 'account_logout' %}" class="dropdown-item text-white">Logout</a>
+                                    </li>
+                                {% else %}
+                                    <li class="flex align-center">
+                                        <a href="{% url 'account_signup' %}" class="dropdown-item text-white">Register</a>
+                                    </li<li class="flex align-center">
+                                        <a href="{% url 'account_login' %}" class="dropdown-item text-white">Login</a>
+                                    </li>
+                                {% endif %}
+                            </ul>
                         </li>
                         <li class="nav-item dropdown">
                             <a href="#" class="dropdown-toggle nav-link text-white" id="productDropdown" role="button"
@@ -237,7 +253,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-link main-cat">
-                                    <a href="{% url 'products' %}?MainCategory=gate_wheels">
+                                    <a href="{% url 'products' %}?MainCategory=gate_wheels" class="text-white">
                                         Gate Wheels
                                     </a>
                                 </li>
