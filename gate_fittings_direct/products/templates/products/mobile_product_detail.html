@@ -10,43 +10,51 @@
     <div class="overlay"></div>
     <div class="container">
         <div class="row">
-
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <h1 class="text-capitalize mb-1">{{ product.name }}</h1>
-                <p class="text-muted">{{ product.sku }}</p>
+            <div class="col-12 mt-4">
+                <h1 class="mb-2 text-capitalize">{{ product.name }}</h1>
             </div>
-            <div class="col-12 my-3">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-6">
+                        <p class="text-muted mb-3 w-25">{{ product.sku }}</p>
+                    </div>
+                    <div class="col-6 float-right">
+                        {% if product.rating %}
+                            <small class="text-muted">{{ product.rating }}</small>
+                        {% else %}
+                            <small class="text-muted">No Rating</small>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
                 {% if product.image %}
-                    <a href="#">
-                        <div class="product-img-container">
-                            <img src="../../../media/{{ product.image }}" class="centered-img" alt="{{ product.name }}">
-                        </div>
-                    </a>
+                    <div class="product-img-container">
+                        <img src="../../../media/{{ product.image }}" class="centered-img" alt="{{ product.name }}">
+                    </div>
                 {% else %}
-                    <a href="#">
-                        <div class="product-img-container">
-                            <img src="{{ MEDIA_URL }}noimage.png" class="centered-img" alt="{{ product.name }}">
-                        </div>
-                    </a>
+                    <div class="product-img-container">
+                        <img src="{{ MEDIA_URL }}noimage.png" class="centered-img" alt="{{ product.name }}">
+                    </div>
                 {% endif %}
             </div>
-            <div class="col-12">
-                <div class="excVat">
-                    <span class="text-muted">Price</span>
+            <div class="col-12 mt-3">
+                <div class="excVat my-4">
+                    <span class="text-muted mt-3">Price</span>
                     <p class="lead mb-0 font-weight-bold price-text">£{{ product.price|div:1.2|floatformat:2 }}</p>
                     <span class="text-muted">exc. VAT</span>
                 </div>
-                <div class="incVat">
+                <div class="incVat mb-3">
                     <span class="text-muted">Price</span>
                     <p class="lead mb-0 font-weight-bold price-text">£{{ product.price }}</p>
                     <span class="text-muted">inc. VAT</span>
                 </div>
-                <form action="{% url 'add_to_bag' product.id %}" class="form mt-3" method="POST">
+            </div>
+            <div class="col-12">
+                <form action="{% url 'add_to_bag' product.id %}" class="form" method="POST">
                     {% csrf_token %}
                     <div class="form-row">
-                        <div class="col-sm-12 col-md-6 flex-row-apart">
+                        <div class="col-12 col-md-6 flex-row-apart">
                             <div class="form-group w-100">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
@@ -71,29 +79,38 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <button type="submit" class="basket-btn flex-center">
+                        <div class="col-12 col-md-6">
+                            <button type="submit" class="basket-btn flex-center hvr-bob">
                                 Add to basket
                             </button>
                         </div>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     </div>
                 </form>
-                <button class="chat-btn mt-5">Have a question? Chat now</button>
+                <button class="chat-btn mt-5 button hvr-bounce-to-right">Have a question? Chat now</button>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
+            <div class="col-12 mt-4">
                 <div class="desc-header-panel flex justify-content-between align-center mt-5">
-                    <h2 class="panel-title">Description</h2>
+                    <h3 class="panel-title">Description</h3>
                     <i class="fas fa-chevron-down"></i>
                 </div>
                 <div class="desc-p-panel px-3 py-3 mb-4">
                     <p>{{ product.description }}</p>
                 </div>
             </div>
+            {% if request.user.is_superuser %}
+                <div class="col-12 mt-4">
+                    <a href="{% url 'edit_product' product.id %}" class="admin-btn flex justify-content-center">
+                        Edit
+                    </a>
+                    <a href="{% url 'delete_product' product.id %}" class="admin-btn flex justify-content-center">
+                        Delete
+                    </a>
+                </div>
+            {% endif %}
         </div>
     </div>
+
 {% endblock %}
 
 {% block postloadjs %}

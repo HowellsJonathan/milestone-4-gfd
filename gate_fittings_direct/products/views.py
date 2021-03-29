@@ -90,7 +90,11 @@ def product_detail(request, product_id):
         'product': product,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    user_agent = get_user_agent(request)
+    if user_agent.is_mobile or user_agents.is_tablet:
+        return render(request, 'products/mobile_product_detail.html', context)
+    elif user_agent.is_pc:
+        return render(request, 'products/product_detail.html', context)
 
 
 @login_required
