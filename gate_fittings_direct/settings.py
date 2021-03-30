@@ -178,8 +178,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    "/gate_fittings_direct/profiles/static",
-    "/gate_fittings_direct/checkout/static",
+    "/profiles/static",
+    "/checkout/static",
 ]
 
 MEDIA_URL = '/media/'
