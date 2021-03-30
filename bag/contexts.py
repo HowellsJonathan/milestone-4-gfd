@@ -1,7 +1,7 @@
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
-from products.models import Product 
+from products.models import Product
 
 
 def bag_contents(request):
@@ -22,7 +22,7 @@ def bag_contents(request):
             'product': product,
         })
 
-    # if total is less than free delivery amount add delivery cost onto 
+    # if total is less than free delivery amount add delivery cost onto
     # checkout
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)

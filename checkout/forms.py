@@ -26,14 +26,15 @@ class OrderForm(forms.ModelForm):
             'street_address2': 'Address 2',
             'county': 'County',
         }
-        
+
         self.fields['full_name'].label = "Full Name:"
         self.fields['email'].label = "Email:"
         self.fields['phone_number'].label = "Phone Number:"
         self.fields['postcode'].label = "Postcode:"
         self.fields['town_or_city'].label = "Town / City:"
         self.fields['street_address1'].label = "Address"
-        self.fields['street_address2'].label = "Address 2 <small class='text-muted'>(optional)</small>"
+        self.fields[
+            'street_address2'].label = "Address 2 <small class='text-muted'>(optional)</small>"
         self.fields['county'].label = "County"
 
         self.fields['full_name'].widget.attrs['autofocus'] = True

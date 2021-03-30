@@ -4,21 +4,7 @@ from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit, Field
 from .models import message
 
-""" class ContactForm(forms.Form):
-    def __init__(self, *args, **kwargs):
-        super(ContactForm, self).__init__(*args, **kwargs)
-        self.helper = FormHelper()
 
-        self.helper.form_method = 'post'
-        self.helper.form_action = '/contact'
-
-        self.helper.add_input(Submit('submit', 'Submit'))
-        
-    from_email = forms.EmailField(max_length=254)
-    subject = forms.CharField(max_length=30)
-    message = forms.CharField(max_length=300, widget=forms.Textarea)
-
- """
 class ContactForm(forms.ModelForm):
     class Meta:
         model = message

@@ -9,7 +9,7 @@ from .models import message
 from profiles.models import UserProfile
 
 
-def contact(request):    
+def contact(request):
 
     if request.method == 'GET':
         if request.user.is_authenticated:
@@ -30,9 +30,9 @@ def contact(request):
             message = contact_form.cleaned_data['message']
             try:
                 send_mail(
-                    subject, 
-                    message, 
-                    from_email, 
+                    subject,
+                    message,
+                    from_email,
                     [settings.DEFAULT_FROM_EMAIL]
                 )
             except BadHeaderError:

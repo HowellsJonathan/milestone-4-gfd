@@ -3,6 +3,7 @@ from .models import Product, main_category, sub_category
 
 # Register your models here.
 
+
 class ProductAdmin(admin.ModelAdmin):
     list_display = (
         'sku',
@@ -22,7 +23,7 @@ class Main_categoryAdmin(admin.ModelAdmin):
         'friendly_name',
         'name',
     )
-    
+
 
 class Sub_categoryAdmin(admin.ModelAdmin):
     list_display = (

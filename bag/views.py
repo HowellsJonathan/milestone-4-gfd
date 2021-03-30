@@ -5,6 +5,7 @@ from products.models import Product
 
 # Create your views here.
 
+
 def view_bag(request):
     """ A view to return the shopping bag page """
 
@@ -25,7 +26,9 @@ def add_to_bag(request, item_id):
     if item_id in list(bag.keys()):
         # update quantity of item if already in bag
         bag[item_id] += quantity
-        messages.success(request, f'Updated { product.name } quantity to {bag[item_id]}')
+        messages.success(
+            request,
+            f'Updated { product.name } quantity to {bag[item_id]}')
     else:
         # add item to bag
         bag[item_id] = quantity
@@ -46,10 +49,12 @@ def adjust_bag(request, item_id):
     redirect_url = request.POST.get('redirect_url')
     # create or get a bag from the session for the user
     bag = request.session.get('bag', {})
-    
+
     if quantity > 0:
         bag[item_id] = quantity
-        messages.success(request, f'Updated { product.name } quantity to {bag[item_id]}')
+        messages.success(
+            request,
+            f'Updated { product.name } quantity to {bag[item_id]}')
     else:
         bag.pop(item_id)
         messages.success(request, f'Removed { product.name } from your bag')
@@ -76,7 +81,7 @@ def remove_from_bag(request, item_id):
         # overright bag variable for session
         request.session['bag'] = bag
         return HttpResponse(status=200)
-        
+
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
