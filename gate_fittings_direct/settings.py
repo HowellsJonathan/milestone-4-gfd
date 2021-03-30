@@ -27,7 +27,7 @@ SECRET_KEY = '$-v!k5bdf9%f7wu^%_dq#%mrphigg9+09^fld21^hgf787wt+('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['gfd4trade.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['gfd4trade.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
