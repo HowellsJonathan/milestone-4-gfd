@@ -1,1 +1,1 @@
-Boutique Ado Confirmation for Order Number {{ order.order_number }}
+Gate Fittings Direct 4 Trade Confirmation for Order Number {{ order.order_number }}
