@@ -1,0 +1,1 @@
+web: gunicorn gate_fittings_direct.wsgi:application
