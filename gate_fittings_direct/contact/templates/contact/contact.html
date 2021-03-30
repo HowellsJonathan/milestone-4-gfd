@@ -2,17 +2,21 @@
 {% load static %}
 
 {% block content %}
-    <form action="{% url 'contact' %}" method="POST" id="contact-form">
-        {% csrf_token %}
-        <fieldset>
-            {{ contact_form.from_email | as_crispy_field }}
-            {{ contact_form.subject | as_crispy_field }}
-            {{ contact_form.message | as_crispy_field }}
-        </fieldset>
-        <div class="submit-button text-right mt-5 mb-2">                    
-            <button id="submit-button" class="button hvr-shutter-in-horizontal text-uppercase">
-                Send Message
-            </button>
-        </div>
-    </form>
+<div class="contact-container">
+    <div>
+        <form action="{% url 'contact' %}" method="POST" id="contact-form" class="contact-form">
+            {% csrf_token %}
+            <fieldset>
+                {{ contact_form.from_email | as_crispy_field }}
+                {{ contact_form.subject | as_crispy_field }}
+                {{ contact_form.message | as_crispy_field }}
+            </fieldset>
+            <div class="submit-button text-right mt-5 mb-2">                    
+                <button id="submit-button" class="contact-button button hvr-bounce-to-right text-uppercase">
+                    Send Message
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
 {% endblock %}

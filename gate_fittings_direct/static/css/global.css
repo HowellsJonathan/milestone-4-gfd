@@ -178,13 +178,16 @@ input:checked + .vat-slider:before {
 
 /* Allauth form formatting */
 
-.allauth-form-inner-content {
+.allauth-form-inner-content,
+.contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.allauth-form-inner-content form .form-group {
+.allauth-form-inner-content form .form-group,
+.contact-form .form-control,
+.contact-form fieldset {
     width: 100%;
 }
 
@@ -192,7 +195,8 @@ input:checked + .vat-slider:before {
     padding-left: 0;
 }
 
-.allauth-form {
+.allauth-form,
+.contact-form {
     border-radius: 0.1rem;
     box-shadow: 3px 3px 10px rgb(0, 0, 0, 0.1);
     padding: 2rem;
@@ -230,7 +234,8 @@ input:checked + .vat-slider:before {
 }
 
 .allauth-form-inner-content button,
-.allauth-form-inner-content input[type="submit"] {
+.allauth-form-inner-content input[type="submit"],
+.contact-button {
     /* Appy bootstrap btn classes globally to each btn class 
     inn allauth rather than manually adding each html class
     to the many in the allauth html files */
@@ -254,25 +259,20 @@ input:checked + .vat-slider:before {
         border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-/* .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type="submit"]:hover {
-    color: #fff;
-    background-color: #288fbd;
-    border-color: #288fdb;
-} */
-
 .allauth-form-inner-content a {
     color: #17a2b8; /* text-info */
 }
 
-.allauth-button {
+.allauth-button,
+.contact-button {
     border: none;
     border-radius: 0.3rem;
     text-transform: uppercase;
 }
 
-.hvr-bounce-to-right:hover {
+.hvr-bounce-to-right::before {
     border: none;
+    border-radius: 0.3rem;
     background-color: #288fbd;
 }
 
@@ -358,7 +358,8 @@ footer ul li a:hover {
 /* ------------------------------------ Media Queries */
 
 @media (min-width: 585px) {
-    .allauth-form {
+    .allauth-form,
+    .contact-form {
         width: 550px;
     }
 }
