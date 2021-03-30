@@ -14,7 +14,7 @@
                 {% if product.image %}
                     <a href="#">
                         <div class="product-img-container">
-                            <img src="../../../media/{{ product.image }}" class="centered-img" alt="{{ product.name }}">
+                            <img src="{{ MEDIA_URL }}{{ product.image }}" class="centered-img" alt="{{ product.name }}">
                         </div>
                     </a>
                 {% else %}
