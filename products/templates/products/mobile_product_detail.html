@@ -30,7 +30,7 @@
             <div class="col-12">
                 {% if product.image %}
                     <div class="product-img-container">
-                        <img src="../../../media/{{ product.image }}" class="centered-img" alt="{{ product.name }}">
+                        <img src="{{ MEDIA_URL }}{{ product.image }}" class="centered-img" alt="{{ product.name }}">
                     </div>
                 {% else %}
                     <div class="product-img-container">
